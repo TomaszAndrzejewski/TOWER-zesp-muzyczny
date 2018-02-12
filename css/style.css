@@ -1,0 +1,823 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Ovo', serif;
+    overflow-x: hidden;
+}
+
+/* ***** HEADER ***** */
+
+header {
+    display: grid;
+    grid-template-columns: 192px auto;
+    grid-template-rows: 71px 45px calc(100vh - 116px);
+    width: 100%;
+    min-height: 460px;
+    max-height: 100vh;
+}
+
+/* VIDEO */
+
+#myVideo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1410;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* VIDEO PRZYCISKI */
+
+.bts {
+    grid-area: 2 / 1 / 3 / 2;
+    padding-top: 5px;
+}
+
+header .button {
+    color: red;
+    height: 2rem;
+    width: 2rem;
+    margin: .4rem;
+    border-color: brown;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.fa-play,
+.fa-pause,
+.fa-volume-off,
+.fa-volume-up {
+    color: crimson;
+    background: none;
+}
+
+/*  NAWIGACJA  */
+
+.navBar {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: rgba(0, 0, 0, 0.46);
+    position: fixed;
+    width: 100%;
+    height: 77px;
+
+}
+
+
+
+/* MAŁE LOGO */
+
+.litLogo {
+    grid-area: 1 / 1 / 2 / 2;
+    position: fixed;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    font-size: 2rem;
+    color: white;
+}
+
+#nav {
+    grid-area: 1 / 2 / 2 / 3;
+    -ms-flex-item-align: center;
+    align-self: center;
+    justify-self: end;
+}
+
+nav ul {
+    background-color: transparent;
+    font-size: 1.6vw;
+    font-weight: bold;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 2vw;
+}
+
+nav a:hover {
+    font-size: 1em;
+}
+
+nav span1 {
+    border-bottom: 1px solid crimson;
+}
+
+nav a {
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    color: aliceblue;
+    text-decoration: none;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+nav a:hover {
+    font-size: 1.2em;
+    color: red;
+    border-bottom: 1px solid crimson;
+}
+
+/* WIEŻA */
+
+h1 {
+    grid-area: 2 / 1 / 4 / 3;
+    justify-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+
+/* ***** O NAS ***** */
+
+.oNas {
+    background-color: #0e0a0b;
+    background-image: url(img/bg/neon-tower-1024x455.jpg);
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: inherit;
+    background-size: contain;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.textOne h2 {
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.textOne h3 {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+.textOne > p {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+}
+
+/* KONTAKT */
+.textOne .fa-envelope-o, .textOne .fa-phone, .textOne .fa-facebook-official {
+    display: block;
+    color: #d936a1;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.textOne a {
+    text-decoration: none;
+}
+
+
+/* ***** OFERTA ***** */
+
+.oferta {
+    background-image: url(img/bg/@bgoferta5-1024x312.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: inherit;
+    background-size: contain;
+    background-color: #220e23;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 2rem;
+}
+
+.oferta h2 {
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.oferta p {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+}
+
+.oferta a {
+    text-decoration: none;
+    color: #d936a1;
+}
+
+/* PRZYCISKI */
+
+.oferta .button {
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    margin: 3rem;
+}
+
+.oferta a {
+    color: aliceblue;
+}
+
+.buttonR {
+    background-color: #6d3824;
+}
+
+.buttonO {
+    background-color: #283195;
+}
+
+
+/* ***** ZDJĘCIA ***** */
+
+.gallery {
+    background-color: #201529;
+    background-image: url(img/bg/bgzdjecia-1024x628.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: inherit;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20vw;
+}
+
+
+input {
+    display: none;
+}
+
+.carusel {
+    position: relative;
+    max-width: 600px;
+    height: 500px;
+    max-height: 100vh;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 1rem;
+}
+
+.carusel__item {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: center no-repeat;
+    background-size: contain;
+    -webkit-transition: left 0.5s, -webkit-transform 0.5s;
+    transition: left 0.5s, -webkit-transform 0.5s;
+    transition: left 0.5s, transform 0.5s;
+    transition: left 0.5s, transform 0.5s, -webkit-transform 0.5s;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.carusel__arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0.7;
+    color: #fff;
+    background-color: #999;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: bold;
+}
+
+input:checked + div ~ div ~ div ~ div .carusel__item {
+    background-image: none !important;
+}
+
+input:checked + div *,
+input:checked + div + input + div .carusel__item,
+input:checked + div + input + div + input + div * {
+    display: block;
+}
+
+input:checked + div .carusel__item {
+    left: -100%;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+input:checked + div + input + div .carusel__item {
+    left: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+input:checked + div + input + div + input + div .carusel__item {
+    left: 100%;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+input:checked + div .carusel__arrow {
+    left: 0;
+}
+
+input:checked + div + input + div + input + div .carusel__arrow {
+    right: 0;
+}
+
+input:checked + div .carusel__arrow:before {
+    content: '❰';
+}
+
+input:checked + div + input + div + input + div .carusel__arrow:before {
+    content: '❱';
+}
+
+
+/* ***** MUZYKA ***** */
+
+.playList {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg/bgaudiowideo2-1024x455.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #0a0c14;
+}
+
+.playList ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+    padding-top: 50vh;
+
+}
+
+.playList li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.playList p {
+    color: aliceblue;
+}
+
+
+/* ***** FILMY ***** */
+
+
+.video {
+    width: 100vh;
+    height: 100%;
+}
+
+.video ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+    padding-bottom: .3rem;
+    list-style: none;
+    width: 100vw;
+}
+
+.video li {
+    display: block;
+    width: 100vw;
+
+}
+
+.video iframe {
+    width: 100%;
+    height: height: calc(100vw / 2);
+}
+
+
+/* ***** OPINIE ***** */
+
+.opinie {
+    background-image: url(img/bg/bgopinie-1024x683.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #1f0000;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    text-align: center;
+    padding: .5rem;
+}
+
+.opinie h2 {
+    padding-top: 10vh;
+    font-size: 2rem;
+}
+
+.opinie h3 {
+    padding-top: 90vh;
+    font-size: 1.5rem;
+}
+
+.opinie h3:nth-child(5) {
+    padding-top: 2rem;
+}
+
+.opinie h3:nth-child(8) {
+    padding-top: 2rem;
+}
+
+.opinie p {
+    padding-top: 1rem;
+}
+
+.opinie h2:nth-child(11) {
+    padding-bottom: 1rem;
+}
+
+.opinie ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    padding-bottom: .8rem;
+}
+
+.opinie a {
+    color: aliceblue;
+}
+
+
+
+
+
+/* ***** KONTAKT ***** */
+
+.kontakt {
+    background-image: url(img/bg/bgkontakt-1024x576.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.kontakt h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+    color: aliceblue;
+    font-size: 2rem;
+}
+.kontakt a {
+    text-decoration: none;
+}
+.kontakt .fa-envelope-o, .fa-phone, .fa-facebook-official {
+    color: #ebbf2a;
+    font-size: 1.3rem;
+    padding: .5rem;
+}
+.kontakt p, .kontakt p a {
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #d87540;
+}
+
+
+
+
+
+
+/* ***** MEDIA QUERIES ***** */
+
+@media only screen and (max-width: 340px) {
+
+    .textOne h2 {
+        padding-top: 28vh;
+    }
+    .textOne h3 {
+        padding-top: 1.5rem;
+    }
+    .oferta h2 {
+        padding-top: 20vh;
+    }
+    .oferta .button {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .gallery {
+        background-attachment: initial;
+        background-size: contain;
+        padding-top: 13vh;
+        padding-bottom: 0;
+        height: 100%;
+    }
+    .carusel {
+        height: 60vh;
+    }
+}
+
+
+@media only screen and (orientation: portrait) and (max-width: 340px) {
+    .oferta {
+        height: 100%;
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+    .oferta h2,
+    .oferta p {
+        padding-top: 1rem;
+    }
+    .playList ul {
+        padding-top: 24vh;
+    }
+    .video iframe {
+        width: 100vw;
+    }
+    .opinie h2 {
+        padding-top: 5px;
+    }
+    .opinie h3 {
+        padding-top: 20vh;
+    }
+    .opinie h2:nth-child(11) {
+        padding-top: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 341px) and (max-width: 440px) {
+    .textOne h2 {
+        padding-top: 40vh;
+    }
+    .oferta {
+        padding-top: 2px;
+    }
+}
+
+
+@media only screen and (orientation: portrait) and (min-width: 341px) and (max-width: 440px) {
+    .oferta {
+        height: 100%;
+        padding-top: 2vh;
+        padding-bottom: 5px;
+    }
+    .textOne h2 {
+        padding-top: 15vh;
+    }
+    .gallery {
+        height: 80%;
+    }
+    .playList ul {
+        padding-top: 24vh;
+    }
+    .video iframe {
+        width: 100vw;
+        height: 33vh;
+    }
+    .opinie h2 {
+        padding-top: 5px;
+    }
+    .opinie h3 {
+        padding-top: 15vh;
+    }
+    .opinie h2:nth-child(11) {
+        padding-top: 2rem;
+    }
+}
+
+
+@media only screen and (min-width: 440px) {
+    .textOne h2 {
+        padding-top: 1rem;
+    }
+    .textOne h3 {
+        padding-top: 3rem;
+    }
+    .oNas {
+        background-size: inherit;
+    }
+    .oferta h2 {
+        padding-top: 5px;
+    }
+    .oferta .button {
+        display: inline-block;
+        margin: 2.5vw;
+    }
+    .gallery {
+        background-attachment: initial;
+        background-size: contain;
+        height: 100%;
+        padding-bottom: 1rem;
+    }
+    .carusel {
+        height: 91vh;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+}
+
+
+@media only screen and (orientation: portrait) and (min-width: 440px) {
+    .gallery {
+        padding-top: 0;
+    }
+    .playList ul {
+        padding-top: 24vh;
+    }
+    .video iframe {
+        height: calc(100vw / 2);
+        width: 100%;
+    }
+    .oferta,
+    .oNas {
+        background-size: cover;
+    }
+    .opinie h2 {
+        padding-top: .5rem;
+    }
+    .opinie h3 {
+        padding-top: 40vh;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #nav {
+        transition: -webkit-transform .3s ease-in-out;
+        -webkit-transition: -webkit-transform .3s ease-in-out;
+        transition: transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        position: fixed;
+        text-align: center;
+        width: 75vw;
+        left: 50%;
+        top: -350px;
+        z-index: 2;
+    }
+    #nav:target {
+        -webkit-transform: translate(-50%, 300px);
+        transform: translate(-50%, 350px);
+    }
+    nav ul {
+        font-size: 1.2em;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        background-color: rgba(60, 35, 142, 0.87);
+    }
+    nav ul li {
+        display: block;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .topLine {
+        background-color: transparent;
+    }
+    .navBar {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    .oferta,
+    .oNas {
+        background-size: cover;
+    }
+    .textOne h2 {
+        padding-top: 5vh;
+    }
+    .gallery {
+        height: 100%;
+        padding-bottom: 8vh;
+    }
+    .carusel {
+        height: 100vh;
+        margin-top: 4vh;
+    }
+    .video iframe {
+        width: 50%;
+        height: 25vw;
+    }
+    .opinie h2 {
+        padding-top: 60vh;
+    }
+    .opinie h3 {
+        padding-top: 15vh;
+    }
+    .opinie h2:nth-child(11) {
+        padding-top: 12vh;
+    }
+    .kontakt {
+        background-position-y: -10vh;
+    }
+}
+
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+    .gallery {
+        height: 80%;
+        padding-top: 10vh;
+    }
+    .carusel {
+        height: 50vh;
+        margin-top: 10vh
+    }
+    .playList ul {
+        padding-top: 20vh;
+    }
+    .opinie h2 {
+        padding-top: 10vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .oNas {
+        background-size: cover;
+    }
+    .oferta {
+        padding-top: 3vh;
+    }
+    .gallery {
+        background-size: cover;
+        background-position-x: -25vh;
+        height: 125vh;
+    }
+    .opinie {
+        background-size: cover;
+    }
+    .opinie h2 {
+        padding-top: 20vh;
+    }
+    .kontakt {
+        background-position-y: -20vh;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .gallery {
+        background-position-x: -25vh;
+        height: 100%;
+    }
+    .gallery 
+    .video iframe {
+        width: 30%;
+        padding: 5px;
+    }
+    .kontakt {
+        background-position-y: -25vh;
+    }
+    .opinie p {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 1600px) {
+    .gallery {
+        background-position: 0;
+    }
+    .playList ul {
+        grid-gap: 2rem;
+        padding-top: 40vh;
+    }
+    .playList li {
+        padding: .5rem;
+    }
+    .video ul {
+        grid-template-columns:  repeat(auto-fit, minmax(570px, 1fr));
+        grid-gap: 3rem;
+    }
+    .video li {
+        width: 100%;
+    }
+    .video iframe {
+        width: 100%;
+    }
+}

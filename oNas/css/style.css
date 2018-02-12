@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Ovo', serif;
+    overflow-x: hidden;
+}
+
+/* ***** HEADER ***** */
+
+header {
+}
+
+
+/*  NAWIGACJA  */
+
+.navBar {
+    background-color: rgba(0, 0, 0, 0.46);
+    position: fixed;
+    width: 100%;
+    height: 77px;
+
+}
+
+
+
+/* MAŁE LOGO */
+
+.litLogo {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 50;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    font-size: 2rem;
+    color: white;
+}
+
+#nav {
+}
+
+nav ul {
+    position: absolute;
+    background-color: #0e0a0b;
+    font-size: 1.6vw;
+    font-weight: bold;
+    list-style: none;
+    width: 75vw;
+    height: 20vh;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a:hover {
+    font-size: 1em;
+}
+
+nav span2 {
+    border-bottom: 1px solid crimson;
+}
+
+nav a {
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    color: aliceblue;
+    text-decoration: none;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    font-size: .8rem;
+    
+}
+
+nav a:hover {
+    font-size: 1.2em;
+    color: red;
+    border-bottom: 1px solid crimson;
+}
+
+/* ***** O NAS ***** */
+
+.oNas {
+    background-color: #0e0a0b;
+    background-image: url(img/neon-tower-1024x455.jpg);
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: inherit;
+    background-size: contain;
+    text-decoration: none;
+    
+}
+
+.textOne h2 {
+    padding-top: 50vh;
+    font-size: 3rem;
+}
+
+.textOne h3 {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+.textOne > p {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+}
+
+/* KONTAKT */
+
+.kontakt {
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+    
+}
+
+.fa-envelope-o, .fa-phone, .fa-facebook-official {
+    display: block;
+    color: #d936a1;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    background-color: #0e0a0b;
+   text-decoration: none;
+}
+.kontakt a {
+    text-decoration: none;
+}
+
+
+
+
+
+/* ***** MEDIA QUERIES ***** */
+
+
+
+
+
+@media only screen and (max-width: 340px) {
+
+    .textOne h2 {
+        padding-top: 28vh;
+    }
+    .textOne h3 {
+        padding-top: 1.5rem;
+    }
+}
+
+
+@media only screen and (min-width: 341px) and (max-width: 440px) {
+    .textOne h2 {
+        padding-top: 40vh;
+    }
+}
+
+
+@media only screen and (orientation: portrait) and (min-width: 341px) and (max-width: 440px) {
+    
+    .textOne h2 {
+        padding-top: 15vh;
+    }
+    
+}
+
+
+@media only screen and (min-width: 440px) {
+   
+}
+
+
+@media only screen and (orientation: portrait) and (min-width: 440px) {
+    
+    .oNas {
+        background-size: cover;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #nav {
+        transition: -webkit-transform .3s ease-in-out;
+        -webkit-transition: -webkit-transform .3s ease-in-out;
+        transition: transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        position: fixed;
+        text-align: center;
+        width: 75vw;
+        left: 50%;
+        top: -350px;
+       
+    }
+    #nav:target {
+        -webkit-transform: translate(-50%, 300px);
+        transform: translate(-50%, 350px);
+    }
+    nav ul {
+        font-size: 1.2em;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        background-color: rgba(60, 35, 142, 0.87);
+    }
+    nav ul li {
+        display: block;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .topLine {
+        background-color: transparent;
+    }
+    .navBar {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    .oNas {
+        background-size: cover;
+    }
+    .textOne h2 {
+        padding-top: 45vh;
+    }
+    .kontakt {
+        background-position-y: -10vh;
+    }
+}
+
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .oNas {
+        background-size: cover;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+    
+    .kontakt {
+        background-position-y: -25vh;
+    }
+}
+
+
+
+@media only screen and (min-width: 1600px) {
+    
+}
+
