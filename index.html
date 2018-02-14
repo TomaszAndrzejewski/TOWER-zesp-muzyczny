@@ -2,468 +2,488 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="<X-Ua-Compatybile" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>„Tower” - Zespół muzyczny na wesele</title>
-    <meta name="description" content="Zespół Tower">
-    <meta name="keywords" content="Tower, zespół muzyczny, wesele, oczepiny, impreza, zabawa, Białystok, Podlasie">
-    <meta name="author" content="Tomasz Andrzejewski">
+	<meta charset="UTF-8">
+	<meta http-equiv="<X-Ua-Compatybile" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>„Tower” - Zespół muzyczny na wesele</title>
+	<meta name="description" content="Zespół Tower">
+	<meta name="keywords" content="Tower, zespół muzyczny, wesele, oczepiny, impreza, zabawa, Białystok, Podlasie">
+	<meta name="author" content="Tomasz Andrzejewski">
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body cz-shortcut-listen="true">
 
-    <!--HEADER-->
+	<!--HEADER-->
 
-    <header>
+	<header>
 
-        <!--BG VIDEO-->
+		<!--BG VIDEO-->
 
-        <div class="bts">
+		<div class="bts">
 
-            <!--PRZYCISKI-->
+			<!--PRZYCISKI-->
 
-            <button onclick="playVid()" class="button">
+			<button onclick="playVid()" class="button">
 						<i class="fa fa-play" aria-hidden="true"></i>
 					</button>
-            <button onclick="pauseVid()" class="button">
+			<button onclick="pauseVid()" class="button">
 						<i class="fa fa-pause" aria-hidden="true"></i>
 					</button>
 
-            <button onclick="enableMute()" class="button">
+			<button onclick="enableMute()" class="button">
 						<i class="fa fa-volume-off" aria-hidden="true"></i>
 					</button>
-            <button onclick="disableMute()" class="button">
+			<button onclick="disableMute()" class="button">
 						<i class="fa fa-volume-up" aria-hidden="true"></i>
 					</button>
 
-        </div>
-        
-        <!--video-->
-        
-        <video autoplay loop id="myVideo">
-					  <source src="css/img/bg/Bo%20jo%20Cie%20kochom%20%5B720p%5D.mp4" type="video/mp4">
+		</div>
+
+		<!--video-->
+
+		<video loop id="myVideo">
+					  <source src="css/img/bg/You%20Spin%20Me%20Round%20(Like%20a%20Record)%20-%20COVER%20_%20TOWER%20%5B720p%5D.mp4" type="video/mp4">
 					</video>
-        <!--NAV-->
+		<!--NAV-->
 
-        <div class="navBar">
-            <!--LOGO-->
-            <a class="litLogo" href="index.html"><img src="css/img/logo/towerw.png" alt="„Tower” - Zespół muzyczny na wesele"></a>
+		<div id="navbar">
 
-            <!--HAMBURGER-->
+			<!--LOGO-->
 
-            <a class="hamburger" href="#nav"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        </div>
+			<a class="litLogo" href="index.html"><img src="css/img/logo/towerw.png" alt="„Tower” - Zespół muzyczny na wesele"></a>
 
-        <!--NAWIGACJA-->
+			<!--HAMBURGER-->
 
-        <nav id="nav">
+			<a class="hamburger" href="#nav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		</div>
 
-            <ul>
-                <li><a href="index.html"><span1>GŁÓWNA</span1></a></li>
-                <li><a href="oNas/index.html"><span2>O NAS</span2></a></li>
-                <li><a href="oferta/index.html"><span3>OFERTA</span3></a></li>
-                <li><a href="zdjecia/index.html"><span4>ZDJĘCIA</span4></a></li>
-                <li><a href="audio/index.html"><span5>AUDIO</span5></a></li>
-                <li><a href="video/index.html"><span6>WIDEO</span6></a></li>
-                <li><a href="opinie/index.html"><span7>OPINIE</span7></a></li>
-                <li><a href="kontakt/index.html"><span8>KONTAKT</span8></a></li>
-            </ul>
+		<!--NAWIGACJA-->
 
-        </nav>
+		<nav id="nav">
 
+			<ul>
+				<li><a href="index.html"><span1>GŁÓWNA</span1></a></li>
+				<li><a href="oNas/index.html"><span2>O NAS</span2></a></li>
+				<li><a href="oferta/index.html"><span3>OFERTA</span3></a></li>
+				<li><a href="zdjecia/index.html"><span4>ZDJĘCIA</span4></a></li>
+				<li><a href="audio/index.html"><span5>AUDIO</span5></a></li>
+				<li><a href="video/index.html"><span6>WIDEO</span6></a></li>
+				<li><a href="opinie/index.html"><span7>OPINIE</span7></a></li>
+				<li><a href="kontakt/index.html"><span8>KONTAKT</span8></a></li>
+			</ul>
+		</nav>
 
-        <!-- WIEŻA-->
 
-        <h1><img src="css/img/logo/logo-b.png"></h1>
+		<!-- WIEŻA-->
 
-    </header>
+		<h1><img src="css/img/logo/logo-b.png"></h1>
 
+	</header>
 
-    <!--O NAS-->
 
+	<!--O NAS-->
 
-    <article>
 
+	<article>
 
-        <div class="oNas">
 
-            <div class="textOne">
 
-                <h2>O nas</h2>
 
-                <h3>Witaj na naszej stronie!</h3>
+		<div class="textOne">
+			<div class="animatedLeft">
 
-                <p>Zapewne planujesz Swój wielki Dzień, ale nie masz jeszcze nikogo kto by na nim zagrał? Jesteś w dobrym miejscu! Nie bez powodu „Tower” jest jednym z najbardziej rozchwytywanych zespołów w Białymstoku i województwie podlaskim.</p>
-                <p>Jesteśmy w pełni oddani temu co robimy oraz zdeterminowani by uczynić Twój Wieczór niezapomnianym przeżyciem. Gwarantujemy, że pod koniec imprezy Goście będą wołać o więcej.</p>
-                <p>Zdecydowana większość naszych rezerwacji pochodzi z poczty pantoflowej - co samo w sobie jest najlepszym świadectwem naszej jakości.</p>
-                <p>Wynajmij nas na wesele lub inną imprezę, a sam się przekonasz, że potrafimy <em><b>dać czadu</b></em>.</p>
+				<h2>O nas</h2>
 
-                <a href="mailto:towermusic@op.pl"><i class="fa fa-envelope-o" aria-hidden="true"> towermusic@op.pl</i></a>
+				<p>Zapewne planujesz Swój wielki Dzień, ale nie masz jeszcze nikogo kto by na nim zagrał? Jesteś w dobrym miejscu! Nie bez powodu „Tower” jest jednym z najbardziej rozchwytywanych zespołów w Białymstoku i województwie podlaskim. Jesteśmy w pełni oddani temu co robimy oraz zdeterminowani by uczynić Twój Wieczór niezapomnianym przeżyciem. Gwarantujemy, że pod koniec imprezy Goście będą wołać o więcej. Zdecydowana większość naszych rezerwacji pochodzi z poczty pantoflowej - co samo w sobie jest najlepszym świadectwem naszej jakości. Wynajmij nas na wesele lub inną imprezę, a sam się przekonasz, że potrafimy dać czadu.</p>
 
-                <a href="tel:513408100"><i class="fa fa-phone" aria-hidden="true"> 513-40-81-00</i></a>
+			</div>
 
-                <a href="https://www.facebook.com/towermusicband/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"> facebook.com/towermusicband/</i>
-					</a>
+			<div class="animatedRight">
 
-            </div>
-        </div>
+				<!--ZOSTAWIĘ LINKI JAKBY CO-->
 
-    </article>
+				<!--<a href="tel:513408100">--><i class="fa fa-phone" aria-hidden="true"> 513-40-81-00</i>
+				<!--</a>-->
 
+				<!--<a href="mailto:towermusic@op.pl">--><i class="fa fa-envelope-o" aria-hidden="true"> towermusic@op.pl</i>
+				<!--</a>-->
 
-    <!--OFERTA-->
+				<!--<a href="https://www.facebook.com/towermusicband/" target="_blank">--><i class="fa fa-facebook-official" aria-hidden="true"> facebook.com/towermusicband/</i>
+				<!--</a>-->
+			</div>
+		</div>
+	</article>
 
-    <main>
 
-        <div class="oferta">
+	<!--OFERTA-->
 
-            <h2>Twój Wielki Dzień</h2>
+	<main>
 
-            <p>Jesteśmy dumni ze sposobności zapewnienia Wam najbardziej profesjonalnej i rozrywkowej usługi na rynku. Pomożemy Ci uczynić „Twój Wielki Dzień” tak specjalnym i niezapomnianym, jak to tylko możliwe - wszyscy Goście długo będą wpominali o Waszym Zespole Weselnym.</p>
-            <p>Nasz repertuar jest zaplanowany w taki sposób, by ściągnąć jak największą ilość Gości na parkiet. Wykonujemy utwory z różnych gatunków muzycznych, dzięki czemu każdy znajdzie coś dla siebie.</p>
-            <p>Jesteśmy w pełni zaopatrzeni. Posiadamy własne nagłośnienie, światła i urządzenie do generowania sztucznego dymu. Jednak jeśli wynajęta przez Ciebie sala jest już wyposażona w sprzęt muzyczny, nie stanowi to żadnego problemu, gdyż możemy się łatwo dostosować.</p>
-            <p>Niezależnie od tego, czy potrzebujesz byśmy poprowadzili Oczepiny, skomponowali unikalną Playlistę, pomogli przy Waszym Pierwszym Tańcu, czy nawet złożyli podziękowania dla Waszych Rodziców, Dziadków, Stryjów, Ciotek, Wujenek czy innego kuzynostwa - nasza firma oferuje te wszystkie dodatki, które zapewnią Ci płynny i bezstresowy przebieg zabawy oraz niepowtarzalne chwile.</p>
-            <p>Zdajemy sobie sprawę, że prawdopodobnie jest to pierwsze wesele jakie organizujesz, podczas gdy my zagraliśmy ich setki, więc swobodnie możesz nas pytac o jakiekolwiek kwestie lub poprosić o radę.</p>
-            <p><em>Pamiętaj - nie ma głupich pytań!</em></p>
-            <p>Mozesz napisać do nas na <a href="mailto:towermusic@op.pl">maila</a> lub <a href="tel:513408100">zadzwonić</a> do Pawła.</p>
+		<div class="oferta">
 
+			<p>Jesteśmy dumni ze sposobności zapewnienia Wam najbardziej profesjonalnej i rozrywkowej usługi na rynku. Pomożemy Ci uczynić „Twój Wielki Dzień” tak specjalnym i niezapomnianym, jak to tylko możliwe - wszyscy Goście długo będą wpominali o Waszym Zespole Weselnym. Nasz repertuar jest zaplanowany w taki sposób, by ściągnąć jak największą ilość Gości na parkiet. Wykonujemy utwory z różnych gatunków muzycznych, dzięki czemu każdy znajdzie coś dla siebie. Jesteśmy w pełni zaopatrzeni. Posiadamy własne nagłośnienie, światła i urządzenie do generowania sztucznego dymu. Jednak jeśli wynajęta przez Ciebie sala jest już wyposażona w sprzęt muzyczny, nie stanowi to żadnego problemu, gdyż możemy się łatwo dostosować. Niezależnie od tego, czy potrzebujesz byśmy poprowadzili Oczepiny, skomponowali unikalną Playlistę, pomogli przy Waszym Pierwszym Tańcu, czy nawet złożyli podziękowania dla Waszych Rodziców, Dziadków, Stryjów, Ciotek, Wujenek czy innego kuzynostwa - nasza firma oferuje te wszystkie dodatki, które zapewnią Ci płynny i bezstresowy przebieg zabawy oraz niepowtarzalne chwile. Zdajemy sobie sprawę, że prawdopodobnie jest to pierwsze wesele jakie organizujesz, podczas gdy my zagraliśmy ich setki, więc swobodnie możesz nas pytac o jakiekolwiek kwestie lub poprosić o radę. Pamiętaj - nie ma głupich pytań! Mozesz napisać do nas na
+				<!--<a href="mailto:towermusic@op.pl">-->maila
+				<!--</a>-->lub
+				<!--<a href="tel:513408100">-->zadzwonić
+				<!--</a>-->do Pawła.</p>
 
-            <!--PRZYCISKI-->
 
-            <a href="https://drive.google.com/file/d/0B10iNzO18MDwZi02bnJIc09VWW8/view" class="button buttonR" target="_blank">REPERTUAR</a>
+			<!--PRZYCISKI-->
 
-            <a href="https://drive.google.com/file/d/0B10iNzO18MDwbWhReEZqYzRLY2c/view" class="button buttonO" target="_blank">OCZEPINY</a>
 
-        </div>
+			<div class="buttons">
 
-    </main>
+				<a href="https://drive.google.com/file/d/0B10iNzO18MDwZi02bnJIc09VWW8/view" class="button buttonR" target="_blank">REPERTUAR</a>
 
-    <!--ZDJĘCIA-->
+				<a href="https://drive.google.com/file/d/0B10iNzO18MDwbWhReEZqYzRLY2c/view" class="button buttonO" target="_blank">OCZEPINY</a>
+			</div>
+		</div>
+	</main>
 
-    <section>
 
-        <div class="gallery">
 
-            <!--KARUZELA-->
-
-            <div class="carusel">
-                <input type="radio" id="car0" name="car" checked="checked" />
-                <div></div>
-
-                <input type="radio" id="car1" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car0"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0000_IMG_5009.png)"></div>
-                </div>
-
-                <input type="radio" id="car2" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car1"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0000_Layer-6.png)"></div>
-                </div>
-
-                <input type="radio" id="car3" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car2"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0001_Layer-5.png)"></div>
-                </div>
-
-                <input type="radio" id="car4" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car3"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0002_IMG_5049.png)"></div>
-                </div>
-
-                <input type="radio" id="car5" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car4"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0002_Layer-4.png)"></div>
-                </div>
-
-                <input type="radio" id="car6" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car5"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0003_IMG_4992.png)"></div>
-                </div>
-
-                <input type="radio" id="car7" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car6"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0003_Layer-3.png)"></div>
-                </div>
-
-                <input type="radio" id="car8" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car7"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0004_Layer-2-1.png)"></div>
-                </div>
-
-                <input type="radio" id="car9" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car8"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0004_Layer-2.png)"></div>
-                </div>
-
-                <input type="radio" id="car10" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car9"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0005_Layer-1-1.png)"></div>
-                </div>
-
-                <input type="radio" id="car11" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car10"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0005_Layer-1.png)"></div>
-                </div>
-
-                <input type="radio" id="car12" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car11"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0006_Layer-1.png)"></div>
-                </div>
-
-                <input type="radio" id="car13" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car12"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0006_Layer-1-1.png)"></div>
-                </div>
-
-                <input type="radio" id="car14" name="car" />
-                <div>
-                    <label class="carusel__arrow" for="car13"></label>
-                    <div class="carusel__item" style="background-image: url(css/img/photos/000_0007_Layer-1.png)"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!--AUDIO-->
-
-    <section>
-
-        <div class="playList">
-
-            <ul>
-                <li>
-                    <p>"You Spin Me Round"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/86234.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Uptown Funk"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/86236.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Are You Gonna Girl?"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/86237.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Take Me Down"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/86231.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Are You Mine?"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/86230.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"I Need A Hero"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/86229.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Sharp Dressed Man"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/86228.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Sing It Back"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81803.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Maniac"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81802.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Hot Stuff"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81795.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"You"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81801.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Szklana pogoda"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81793.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Dance With Somebody"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81798.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Wicked Game"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81799.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Cykady"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81797.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Just Dance"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81804.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Fly Me To The Moon"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81800.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Fairytales"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81796.mp3" controls></audio>"
-                </li>
-                <li>
-                    <p>"Is This Love?"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81794.mp3" controls></audio>"
-                </li>
-                <li>
-                    <p>"Sway"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81792.mp3" controls></audio>"
-                </li>
-                <li>
-                    <p>"Hej Rock'n'roll "</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81790.mp3" controls></audio>"
-                </li>
-                <li>
-                    <p>"Et Si Tu N'Existais Pas"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81789.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Ooh La La"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81787.mp3" controls></audio>
-                </li>
-                <li>
-                    <p>"Ale w koło jest wesoło"</p>
-                    <audio src="https://www.planujemywesele.pl/muzyka.planujemywesele.pl/81786.mp3" controls></audio>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </section>
-
-
-    <!--WIDEO-->
-
-
-    <section>
-
-        <div class="video">
-
-            <ul>
-
-                <li>
-                    <iframe width="854" height="480" src="https://www.youtube.com/embed/gTGsuhKCIag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </li>
-                <li>
-                    <iframe width="854" height="480" src="https://www.youtube.com/embed/WyKO2SfHVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </li>
-                <li>
-                    <iframe width="854" height="480" src="https://www.youtube.com/embed/S_L7Vo1cQmk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </li>
-                <li>
-                    <iframe width="854" height="480" src="https://www.youtube.com/embed/U2O7jQKeKb0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </li>
-                <li>
-                    <iframe width="854" height="480" src="https://www.youtube.com/embed/y4zvsFDYi9w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </li>
-
-                <li>
-                    <iframe width="854" height="480" src="https://www.youtube.com/embed/YctIiIW52UE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </li>
-
-            </ul>
-
-        </div>
-
-
-    </section>
-
-
-    <!--OPINIE-->
-
-
-    <article>
-
-        <div class="opinie">
-
-            <h2>A oto niektóre opinie o nas.</h2>
-
-            <h3>PAULINA I WIKTOR 15.11.2016</h3>
-
-            <p>Jesteśmy super zadowoleni z zespołu. Zagrali u nas świetnie, a wszyscy goście bawili się aż do końca imprezy. Zespół Tower znaleźliśmy poprzez ofertę na stronie internetowej. Zależało nam na zespole, który nie będzie grać disco polo. Kontakt z zespołem był bardzo dobry – spotkaliśmy się raz, by się poznać i omówić nasze oczekiwania. Potem już mailowo i telefonicznie dograliśmy cały plan działań. Grają bardzo żywiołowo i rozkręcają imprezę swoim pozytywnym nastawieniem, krótkimi zabawami i dobrym humorem. Dają z siebie naprawdę wszystko. Ciężko nam było zejść z parkietu, bo grane przez nich hitowe kawałki nie pozwalały na siedzenie. Zespół bardzo profesjonalnie podszedł do całej imprezy i z przyjemnością możemy ich polecać wszystkim lubiącym poskakać przy super energetycznej muzyce w świetnym wykonaniu. Naprawdę można mieć świetne wesele bez disco polo.</p>
-            <p>Dziękujemy!</p>
-
-            <h3>EMILIA I PIOTR 24.06.2016</h3>
-
-            <p>Zespół Tower grał na naszym weselu. Zdaliśmy się na nich i ich najlepsze kawałki, bez disco polo. Rozruszali całą salę od najmłodszych do najstarszych. Robili krótkie przerwy na jedzenie, a zaraz grali kolejne kawałki, że nie było siedzenia za stołem. Grali od początku imprezy do samego końca. Mają olbrzymi repertuar, który dogodzi każdemu. Mieliśmy bardzo dobry kontakt z Pawłem, omówiliśmy wszelkie szczegóły i propozycje zabaw. Wszystko zostało wypełnione zgodnie z ustaleniami. Mając porównanie to Zespół TOWER jest najlepszy i najbardziej profesjonalny.</p>
-            <p>Polecamy gorąco!</p>
-
-            <h3>IWONA I JAREK 16.04.2016</h3>
-
-            <p>Zespół TOWER znaleźliśmy w internecie i wybraliśmy, aby zagrał na naszym weselu na podstawie opinii innych i demo zamieszczonego na stronie int. zespołu. To była naprawdę bardzo dobra decyzja. Zespół grał świetnie (wykonanie piosenek na bardzo wysokim poziomie), b. mało przerw (i to b. krótkich), bardzo kontaktowi i mili członkowie zespołu, super było też to, że zespół ustalał z nami pewne rzeczy podczas wesela, a nie narzucał sam. I przede wszystkim zespół TOWER umiał świetnie rozpoznać preferencje muzyczne gości i pokierować zabawą tak, aby każdy mógł znaleźć coś dla siebie. Jeśli mielibyśmy ponownie organizować wesele, to z całym przekonaniem wybralibyśmy zespół TOWER. Członkowie zespołu zaskoczyli nas swoim profesjonalnym, niesztampowym podejściem i wyczuciem sytuacji. Dodamy jeszcze, że podczas wesela sporo osób zadawało nam pytania – co to za zespół i jak go znaleźliśmy – goście również byli zachwyceni.</p>
-            <p> Dziękujemy Wam bardzo!</p>
-
-            <h2>Pozostałe komentarze znajdziecie tutaj: </h2>
-
-            <ul>
-
-                <li>
-                    <a href="http://tower.zespoly-weselne.pl/" target="_blank">zespoly-weselne.pl</a>
-                </li>
-
-                <li>
-                    <a href="https://www.weselezklasa.pl/ogloszenia-weselne/zespol-muzyczny-tower,28499/" target="_blank">www.weselezklasa.pl</a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </article>
-
-
-    <!--KONTAKT-->
-
-
-    <footer>
-
-        <div class="kontakt">
-
-            <h2>Skontaktuj się z nami!</h2>
-            <a href="mailto:towermusic@op.pl"><i class="fa fa-envelope-o" aria-hidden="true">
+	<!--GALERIA + SLIDER-->
+
+
+	<section>
+
+		<div class="gallery">
+
+			<h2>GALERIA</h2>
+
+			<!--LIGHTBOX-->
+
+			<div class="row">
+				<div class="column">
+					<img src="css/img/photos/1XL.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="wokalistka">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/2XL.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="młoda para">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/3XL.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="parkiet pełen gości">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/4XL.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="wokalista">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/5XL.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="młoda para">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/6XL.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt="zespół">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/7XL.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" alt="zabawa przy stole">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/8XL.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" alt="basista">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/9XL.png" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" alt="młoda para tańczy">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/10XL.png" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" alt="zespół">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/11XL.png" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor" alt="wokalista">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/12XL.png" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor" alt="zespół">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/13XL.png" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor" alt="zespół">
+				</div>
+				<div class="column">
+					<img src="css/img/photos/14XL.png" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor" alt="zespół">
+				</div>
+			</div>
+
+			<div id="myModal" class="modal">
+
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 14</div>
+						<img src="css/img/photos/1XL.png" style="width:100%" alt="wokalistka">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 14</div>
+						<img src="css/img/photos/2XL.png" style="width:100%" alt="młoda para">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 14</div>
+						<img src="css/img/photos/3XL.png" style="width:100%" alt="parkiet pełen gości">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 14</div>
+						<img src="css/img/photos/4XL.png" style="width:100%" alt="wokalista">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">5 / 14</div>
+						<img src="css/img/photos/5XL.png" style="width:100%" alt="młoda para">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">6 / 14</div>
+						<img src="css/img/photos/6XL.png" style="width:100%" alt="zespół">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">7 / 14</div>
+						<img src="css/img/photos/7XL.png" style="width:100%" alt="zabawa przy stole">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">8 / 14</div>
+						<img src="css/img/photos/8XL.png" style="width:100%" alt="bsista">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">9 / 14</div>
+						<img src="css/img/photos/9XL.png" style="width:100%" alt="mloda para tańczy">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">10 / 14</div>
+						<img src="css/img/photos/10XL.png" style="width:100%" alt="zespół">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">11 / 14</div>
+						<img src="css/img/photos/11XL.png" style="width:100%" alt="wolkalista">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">12 / 14</div>
+						<img src="css/img/photos/12XL.png" style="width:100%" alt="zespół">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">13 / 14</div>
+						<img src="css/img/photos/13XL.png" style="width:100%" alt="zespół">
+					</div>
+					<div class="mySlides">
+						<div class="numbertext">14 / 14</div>
+						<img src="css/img/photos/14XL.png" style="width:100%" alt="zespół">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+					<!--MOŻLIWOŚĆ DODAWANIA PODPISÓW DO ZDJĘĆ, trzeba je podać w alt=""-->
+
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/1XL.png" style="width:100%" onclick="currentSlide(1)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/2XL.png" style="width:100%" onclick="currentSlide(2)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/3XL.png" style="width:100%" onclick="currentSlide(3)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/4XL.png" style="width:100%" onclick="currentSlide(4)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/5XL.png" style="width:100%" onclick="currentSlide(5)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/6XL.png" style="width:100%" onclick="currentSlide(6)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/7XL.png" style="width:100%" onclick="currentSlide(7)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/8XL.png" style="width:100%" onclick="currentSlide(8)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/9XL.png" style="width:100%" onclick="currentSlide(9)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/10XL.png" style="width:100%" onclick="currentSlide(10)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/11XL.png" style="width:100%" onclick="currentSlide(11)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/12XL.png" style="width:100%" onclick="currentSlide(12)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/13XL.png" style="width:100%" onclick="currentSlide(13)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="css/img/photos/14XL.png" style="width:100%" onclick="currentSlide(14)" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!--AUDIO-->
+
+	<section>
+
+
+			<ul id="playList">
+				<li>
+					<p>"You Spin Me Round"</p>
+					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/394743375&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+				</li>
+				<li>
+					<p>"You Keep Me Hangin'On"</p>
+					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/394743375&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+				</li>
+				<li>
+					<p>"Uptown Funk"</p>
+					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393914937&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+				</li>
+				<li>
+					<p>"Are You Gonna Girl?"</p>
+					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393914340&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+				</li>
+				<li>
+					<p>"Take Me Down"</p>
+					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393913068&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+				</li>
+				<li>
+					<p>"Are You Mine?"</p>
+					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393912402&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+				</li>
+				<li>
+					<p>"I Need A Hero"</p>
+					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393904374&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+				</li>
+				<li>
+					<p>"Sharp Dressed Man"</p>
+					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393902721&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+				</li>
+			</ul>
+	</section>
+
+
+	<!--WIDEO-->
+
+
+	<section>
+
+		<div class="video">
+
+			<ul>
+
+				<li>
+					<div class="yt">
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/gTGsuhKCIag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</li>
+				<li>
+					<div class="yt">
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/WyKO2SfHVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</li>
+				<li>
+					<div class="yt">
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/S_L7Vo1cQmk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</li>
+				<li>
+					<div class="yt">
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/U2O7jQKeKb0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</li>
+				<li>
+					<div class="yt">
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/y4zvsFDYi9w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</li>
+
+				<li>
+					<div class="yt">
+						<iframe width="854" height="480" src="https://www.youtube.com/embed/YctIiIW52UE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+	<!--OPINIE-->
+
+
+	<article>
+
+		<div class="opinie">
+
+			<h2>A oto niektóre opinie o nas.</h2>
+
+			<h3>PAULINA I WIKTOR 15.11.2016</h3>
+
+			<p>Jesteśmy super zadowoleni z zespołu. Zagrali u nas świetnie, a wszyscy goście bawili się aż do końca imprezy. Zespół Tower znaleźliśmy poprzez ofertę na stronie internetowej. Zależało nam na zespole, który nie będzie grać disco polo. Kontakt z zespołem był bardzo dobry – spotkaliśmy się raz, by się poznać i omówić nasze oczekiwania. Potem już mailowo i telefonicznie dograliśmy cały plan działań. Grają bardzo żywiołowo i rozkręcają imprezę swoim pozytywnym nastawieniem, krótkimi zabawami i dobrym humorem. Dają z siebie naprawdę wszystko. Ciężko nam było zejść z parkietu, bo grane przez nich hitowe kawałki nie pozwalały na siedzenie. Zespół bardzo profesjonalnie podszedł do całej imprezy i z przyjemnością możemy ich polecać wszystkim lubiącym poskakać przy super energetycznej muzyce w świetnym wykonaniu. Naprawdę można mieć świetne wesele bez disco polo.</p>
+			<p>Dziękujemy!</p>
+
+			<h3>EMILIA I PIOTR 24.06.2016</h3>
+
+			<p>Zespół Tower grał na naszym weselu. Zdaliśmy się na nich i ich najlepsze kawałki, bez disco polo. Rozruszali całą salę od najmłodszych do najstarszych. Robili krótkie przerwy na jedzenie, a zaraz grali kolejne kawałki, że nie było siedzenia za stołem. Grali od początku imprezy do samego końca. Mają olbrzymi repertuar, który dogodzi każdemu. Mieliśmy bardzo dobry kontakt z Pawłem, omówiliśmy wszelkie szczegóły i propozycje zabaw. Wszystko zostało wypełnione zgodnie z ustaleniami. Mając porównanie to Zespół TOWER jest najlepszy i najbardziej profesjonalny.</p>
+			<p>Polecamy gorąco!</p>
+
+			<h3>IWONA I JAREK 16.04.2016</h3>
+
+			<p>Zespół TOWER znaleźliśmy w internecie i wybraliśmy, aby zagrał na naszym weselu na podstawie opinii innych i demo zamieszczonego na stronie int. zespołu. To była naprawdę bardzo dobra decyzja. Zespół grał świetnie (wykonanie piosenek na bardzo wysokim poziomie), b. mało przerw (i to b. krótkich), bardzo kontaktowi i mili członkowie zespołu, super było też to, że zespół ustalał z nami pewne rzeczy podczas wesela, a nie narzucał sam. I przede wszystkim zespół TOWER umiał świetnie rozpoznać preferencje muzyczne gości i pokierować zabawą tak, aby każdy mógł znaleźć coś dla siebie. Jeśli mielibyśmy ponownie organizować wesele, to z całym przekonaniem wybralibyśmy zespół TOWER. Członkowie zespołu zaskoczyli nas swoim profesjonalnym, niesztampowym podejściem i wyczuciem sytuacji. Dodamy jeszcze, że podczas wesela sporo osób zadawało nam pytania – co to za zespół i jak go znaleźliśmy – goście również byli zachwyceni.</p>
+			<p> Dziękujemy Wam bardzo!</p>
+
+			<h2>Pozostałe komentarze znajdziecie tutaj: </h2>
+
+			<ul>
+
+				<li>
+					<a href="http://tower.zespoly-weselne.pl/" target="_blank">zespoly-weselne.pl</a>
+				</li>
+
+				<li>
+					<a href="https://www.weselezklasa.pl/ogloszenia-weselne/zespol-muzyczny-tower,28499/" target="_blank">www.weselezklasa.pl</a>
+				</li>
+
+			</ul>
+
+		</div>
+
+	</article>
+
+
+	<!--KONTAKT-->
+
+
+	<footer>
+
+		<div class="kontakt">
+
+			<h2>Skontaktuj się z nami!</h2>
+			<a href="mailto:towermusic@op.pl"><i class="fa fa-envelope-o" aria-hidden="true">
 					towermusic@op.pl</i></a>
 
-            <a href="tel:513408100"><i class="fa fa-phone" aria-hidden="true">
+			<a href="tel:513408100"><i class="fa fa-phone" aria-hidden="true">
 					513-40-81-00</i></a>
 
-            <a href="https://www.facebook.com/towermusicband/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true">facebook.com/towermusicband/</i></a>
+			<a href="https://www.facebook.com/towermusicband/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true">facebook.com/towermusicband/</i></a>
 
-            <p>&#9400;2018 TOWER & <a href="mailto:tomasz.andrzejewski.ux@wp.pl">TOM-AND</a></p>
+			<p>&#9400;2018 TOWER & <a href="mailto:tomasz.andrzejewski.ux@wp.pl">TOM-AND</a></p>
 
-        </div>
+		</div>
 
-    </footer>
+	</footer>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>

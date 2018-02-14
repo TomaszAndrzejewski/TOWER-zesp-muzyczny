@@ -1,3 +1,5 @@
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;padding:0}h1{font-size:2em;margin:.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}bbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;font-size:75%;line-height:0;position:relative;vertical-align:baseline}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}legend{-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,11 +9,13 @@
 
 html {
     font-size: 16px;
+	height: 100%;
 }
 
 body {
-    font-family: 'Ovo', serif;
+    font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
+	height: 100%;
 }
 
 /* ***** HEADER ***** */
@@ -63,13 +67,16 @@ header .button {
 
 /*  NAWIGACJA  */
 
-.navBar {
+#navbar {
     grid-area: 1 / 1 / 2 / 3;
     background-color: rgba(0, 0, 0, 0.46);
     position: fixed;
     width: 100%;
+	display: block;
     height: 77px;
-
+	top: -80px;
+	-webkit-transition: top 0.3s;
+	transition: top 0.3s;
 }
 
 
@@ -78,13 +85,12 @@ header .button {
 
 .litLogo {
     grid-area: 1 / 1 / 2 / 2;
-    position: fixed;
 }
 
 /* HAMBURGER */
 
 .hamburger {
-    position: fixed;
+	position: absolute;
     right: 15px;
     top: 15px;
     font-size: 2rem;
@@ -145,46 +151,42 @@ h1 {
 
 /* ***** O NAS ***** */
 
-.oNas {
+.textOne {
     background-color: #0e0a0b;
-    background-image: url(img/bg/neon-tower-1024x455.jpg);
+    background-image: url(img/bg/@bgtower3-1024x455.png);
     color: aliceblue;
-    text-align: center;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-position: left top;
-    background-attachment: inherit;
+    background-attachment:scroll;
     background-size: contain;
     text-decoration: none;
-    z-index: 1;
 }
-
 .textOne h2 {
-    padding: 2rem;
-    font-size: 3rem;
-}
-
-.textOne h3 {
     font-size: 1.5rem;
-    padding: 1.5rem;
+	padding: 50vh 0 1rem 2.5rem;
 }
 
-.textOne > p {
-    font-size: 1.2rem;
-    padding: 1.5rem;
+.textOne  p {
+    font-size: 0.875rem;
+    padding: 0 2.5rem 26vh 2.5rem;
+	text-align: justify;
+	line-height: 1.8;
 }
 
 /* KONTAKT */
-.textOne .fa-envelope-o, .textOne .fa-phone, .textOne .fa-facebook-official {
+.textOne .fa-envelope-o, .textOne .fa-phone {
     display: block;
-    color: #d936a1;
-    padding-bottom: 1rem;
+	color: aliceblue;
+    padding: 0 0 1rem 2.5rem;
     font-size: 1rem;
 }
-
-.textOne a {
-    text-decoration: none;
+.textOne .fa-facebook-official {
+	display: block;
+	font-size: 1rem;
+	color: aliceblue;
+	padding: 0 0 24vh 2.5rem; 
 }
 
 
@@ -193,45 +195,57 @@ h1 {
 .oferta {
     background-image: url(img/bg/@bgoferta5-1024x312.png);
     background-repeat: no-repeat;
-    background-position: left top;
-    background-attachment: inherit;
-    background-size: contain;
+    background-attachment: fixed;
+    background-size: cover;
     background-color: #220e23;
     width: 100%;
     height: 100%;
-    text-align: center;
+    text-align: justify;
     color: aliceblue;
-    padding-top: 2rem;
-}
-
-.oferta h2 {
-    padding: 2rem;
-    font-size: 3rem;
+    padding: calc(100vh / 6) 13vw 20vh 13vw;
+	position: relative;
 }
 
 .oferta p {
-    font-size: 1.2rem;
-    padding: 1.5rem;
+	padding-top: 10vh;
+    font-size: 1rem;
+	letter-spacing: 0;
+	line-height: 1.8;
 }
-
+/*
 .oferta a {
     text-decoration: none;
     color: #d936a1;
-}
+}*/
 
 /* PRZYCISKI */
 
+.buttons {
+	text-align: center;
+}
+
 .oferta .button {
-    padding: 1rem 2rem;
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+	-webkit-box-shadow: 0 5px 0 #551a7b;
+	box-shadow: 0 5px 0 #551a7b;
     font-size: 1rem;
-    margin: 4px 2px;
     cursor: pointer;
     border: none;
     border-radius: 15px;
-    margin: 3rem;
+	width: 35vw;
+	-webkit-transition: all .1s linear;
+	transition: all .1s linear;
+	margin: 4vh;
+}
+
+.oferta .button:hover {
+	-webkit-box-shadow: 0 2px 0 #4a2ebf;
+	box-shadow: 0 2px 0 #4a2ebf;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
 }
 
 .oferta a {
@@ -240,153 +254,213 @@ h1 {
 
 .buttonR {
     background-color: #6d3824;
+	background: -webkit-gradient(linear, left top, right top, from(#6d3824), to(#283195));
+	background: linear-gradient(to right, #6d3824, #283195);
+	margin-right: 1rem;
 }
 
 .buttonO {
     background-color: #283195;
+	background: -webkit-gradient(linear, right top, left top, from(#6d3824), to(#283195));
+	background: linear-gradient(to left, #6d3824, #283195);
+	margin-left: 1rem;
 }
 
 
-/* ***** ZDJĘCIA ***** */
+/* ***** GALERIA + SLIDER ***** */
 
 .gallery {
-    background-color: #201529;
+    background-color: #1f1324;
     background-image: url(img/bg/bgzdjecia-1024x628.png);
     background-repeat: no-repeat;
     background-position: left top;
     background-attachment: inherit;
     background-size: contain;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-top: 20vw;
 }
 
-
-input {
-    display: none;
+.gallery h2 {
+	color: aliceblue;
+	text-align: center;
+	padding: 1em 0;
 }
 
-.carusel {
-    position: relative;
-    max-width: 600px;
-    height: 500px;
-    max-height: 100vh;
-    overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    padding-top: 1rem;
+.row {
+	padding-bottom: 1em;
 }
 
-.carusel__item {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: center no-repeat;
-    background-size: contain;
-    -webkit-transition: left 0.5s, -webkit-transform 0.5s;
-    transition: left 0.5s, -webkit-transform 0.5s;
-    transition: left 0.5s, transform 0.5s;
-    transition: left 0.5s, transform 0.5s, -webkit-transform 0.5s;
-    will-change: transform;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+.row > .column {
+	padding: .5rem;
 }
 
-.carusel__arrow {
-    display: none;
-    position: absolute;
-    top: 50%;
-    z-index: 3;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    opacity: 0.7;
-    color: #fff;
-    background-color: #999;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 28px;
-    line-height: 39px;
-    font-weight: bold;
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
-input:checked + div ~ div ~ div ~ div .carusel__item {
-    background-image: none !important;
+.column {
+	float: left;
+	width: 25%;
 }
 
-input:checked + div *,
-input:checked + div + input + div .carusel__item,
-input:checked + div + input + div + input + div * {
-    display: block;
+	/* Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
 }
 
-input:checked + div .carusel__item {
-    left: -100%;
-    -webkit-transform: scale(0.4);
-    transform: scale(0.4);
+	/* Modal zawartość */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
 }
 
-input:checked + div + input + div .carusel__item {
-    left: 0;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+	/* Przycisk zamykający */
+.close {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
 }
 
-input:checked + div + input + div + input + div .carusel__item {
-    left: 100%;
-    -webkit-transform: scale(0.4);
-    transform: scale(0.4);
+.close:hover,
+.close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
 }
 
-input:checked + div .carusel__arrow {
-    left: 0;
+.mySlides {
+	display: none;
 }
 
-input:checked + div + input + div + input + div .carusel__arrow {
-    right: 0;
+.cursor {
+	cursor: pointer;
 }
 
-input:checked + div .carusel__arrow:before {
-    content: '❰';
+	/* Przyciski "Następne" i "Poprzednie" */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	-webkit-transition: 0.6s ease;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
-input:checked + div + input + div + input + div .carusel__arrow:before {
-    content: '❱';
+	/* Pozycja "Następne" do prawej krawędzi */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+	/* po najechniu dodaje czarne, lekko przźroczyste tło */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+	/* Numeracja (1/3 itd) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+img {
+	margin-bottom: -4px;
+}
+
+.caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+}
+
+.demo {
+	opacity: 0.6;
+	padding: .5em;
+}
+
+.active,
+.demo:hover {
+	opacity: 1;
+}
+
+img.hover-shadow {
+	-webkit-transition: 0.3s;
+	transition: 0.3s
+}
+
+.hover-shadow:hover {
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 
 /* ***** MUZYKA ***** */
 
-.playList {
-    width: 100%;
-    height: 100%;
+#playList {
     background-image: url(img/bg/bgaudiowideo2-1024x455.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #0a0c14;
+    background-attachment: fixed;
+	background-position: center;
+    background-size: cover;
+    background-color: #220e23;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+	position: relative;
 }
 
-.playList ul {
+#playList ol {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1rem;
     padding: 1rem;
     padding-top: 50vh;
-
+	list-style-type: none;
 }
 
-.playList li {
+.soundcloud {
     display: block;
     width: 100%;
     text-align: center;
     padding: 5px;
 }
 
-.playList p {
+#playList p {
     color: aliceblue;
 }
 
@@ -413,7 +487,7 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
 
 }
 
-.video iframe {
+.yt {
     width: 100%;
     height: height: calc(100vw / 2);
 }
@@ -519,9 +593,6 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
     .textOne h3 {
         padding-top: 1.5rem;
     }
-    .oferta h2 {
-        padding-top: 20vh;
-    }
     .oferta .button {
         margin-left: 3rem;
         margin-right: 3rem;
@@ -540,12 +611,20 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
 
 
 @media only screen and (orientation: portrait) and (max-width: 340px) {
+	.textOne h2 {
+		padding-top: 17vh;
+	}
+	.textOne p {
+		padding-bottom: 15vh;
+	}
+	.textOne .fa-facebook-official {
+		padding-bottom: 12vh;
+	}
     .oferta {
         height: 100%;
         padding-top: 0;
         padding-bottom: 5px;
     }
-    .oferta h2,
     .oferta p {
         padding-top: 1rem;
     }
@@ -568,9 +647,7 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
 
 
 @media only screen and (min-width: 341px) and (max-width: 440px) {
-    .textOne h2 {
-        padding-top: 40vh;
-    }
+    
     .oferta {
         padding-top: 2px;
     }
@@ -609,22 +686,7 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
 
 
 @media only screen and (min-width: 440px) {
-    .textOne h2 {
-        padding-top: 1rem;
-    }
-    .textOne h3 {
-        padding-top: 3rem;
-    }
-    .oNas {
-        background-size: inherit;
-    }
-    .oferta h2 {
-        padding-top: 5px;
-    }
-    .oferta .button {
-        display: inline-block;
-        margin: 2.5vw;
-    }
+    
     .gallery {
         background-attachment: initial;
         background-size: contain;
@@ -642,7 +704,7 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
 
 @media only screen and (orientation: portrait) and (min-width: 440px) {
     .gallery {
-        padding-top: 0;
+        padding-top: 20vh;
     }
     .playList ul {
         padding-top: 24vh;
@@ -740,8 +802,9 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
     .gallery {
-        height: 80%;
-        padding-top: 10vh;
+        height: 100%;
+        padding-top: 23vh;
+		padding-bottom: 5vh;
     }
     .carusel {
         height: 50vh;
@@ -763,9 +826,9 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
         padding-top: 3vh;
     }
     .gallery {
-        background-size: cover;
-        background-position-x: -25vh;
-        height: 125vh;
+        background-size: initial;
+        padding-top: 40vh;
+        height: 100%;
     }
     .opinie {
         background-size: cover;
@@ -781,13 +844,9 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
 
 @media only screen and (min-width: 1280px) {
     .gallery {
-        background-position-x: -25vh;
-        height: 100%;
     }
     .gallery 
     .video iframe {
-        width: 30%;
-        padding: 5px;
     }
     .kontakt {
         background-position-y: -25vh;
@@ -801,7 +860,6 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
 
 @media only screen and (min-width: 1600px) {
     .gallery {
-        background-position: 0;
     }
     .playList ul {
         grid-gap: 2rem;
@@ -821,3 +879,29 @@ input:checked + div + input + div + input + div .carusel__arrow:before {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
