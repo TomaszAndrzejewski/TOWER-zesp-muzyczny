@@ -92,14 +92,18 @@ var bg = document.querySelector(".textOne");
 /* ANIMACJA OFERTA */
 
 
-var bg = document.querySelector(".oferta");
+var bg2 = document.querySelector(".oferta");
     
-    bg.addEventListener("mouseenter", showTextContainer);
+    bg2.addEventListener("mouseenter", showTextContainer3);
     
-    function showTextContainer() {
-      var textContainer = document.querySelector(".main-text");
-      textContainer.classList.add("text-visible");
-      bg.removeEventListener("mouseenter", showTextContainer);
+    function showTextContainer3() {
+      var textContainer3 = document.querySelector(".main-text");
+      var textContainer4 = document.querySelector(".buttonR");
+      var textContainer5 = document.querySelector(".buttonO");
+      textContainer3.classList.add("text-visible");
+      textContainer4.classList.add("text-visible");
+      textContainer5.classList.add("text-visible");
+      bg2.removeEventListener("mouseenter", showTextContainer3);
     }
 
 
