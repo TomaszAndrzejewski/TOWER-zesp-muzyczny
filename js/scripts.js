@@ -89,8 +89,18 @@ var bg = document.querySelector(".textOne");
     }
 
 
+/* ANIMACJA OFERTA */
 
 
+var bg = document.querySelector(".oferta");
+    
+    bg.addEventListener("mouseenter", showTextContainer);
+    
+    function showTextContainer() {
+      var textContainer = document.querySelector(".main-text");
+      textContainer.classList.add("text-visible");
+      bg.removeEventListener("mouseenter", showTextContainer);
+    }
 
 
 

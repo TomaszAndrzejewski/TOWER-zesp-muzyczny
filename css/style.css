@@ -152,17 +152,19 @@ h1 {
 /* ***** O NAS ***** */
 
 .textOne {
-    background-color: #0e0a0b;
     background-image: url(img/bg/@bgtower3-1024x455.png);
+	background-color: #0b0a0c;
     color: aliceblue;
     width: 100%;
-    height: 100%;/*  */
+    height: 100%;
     background-repeat: no-repeat;
     background-position: left top;
     background-attachment:scroll;
     background-size: contain;
     text-decoration: none;
 	position: relative;
+	
+	
 }
 
 .animatedLeft {
@@ -180,35 +182,36 @@ h1 {
 .animatedLeft.text-visible {
 	position: relative;
 	left: 0;
+	padding: 55vh 8vw 5vh 8vw;
 }
 .animatedRight.text-visible {
 	position: relative;
 	right: 0;
+	padding: 5vh 8vw;
 }
 .textOne h2 {
     font-size: 1.5rem;
-	padding: 50vh 0 1rem 2.5rem;
 }
 
 .textOne  p {
     font-size: 0.875rem;
-    padding: 0 2.5rem 26vh 2.5rem;
 	text-align: justify;
 	line-height: 1.8;
 }
 
 /* KONTAKT */
+.textOne .fa {
+	padding: 1vw;
+}
 .textOne .fa-envelope-o, .textOne .fa-phone {
     display: block;
 	color: aliceblue;
-    padding: 0 0 1rem 2.5rem;
     font-size: 1rem;
 }
 .textOne .fa-facebook-official {
 	display: block;
 	font-size: 1rem;
-	color: aliceblue;
-	padding: 0 0 24vh 2.5rem; 
+	color: aliceblue; 
 }
 
 
@@ -228,11 +231,22 @@ h1 {
 	position: relative;
 }
 
-.oferta p {
-	padding-top: 10vh;
+.main-text {
+	position: relative;
+	right: -150%;
+	transition: 1s;
+	height: auto;
     font-size: 1rem;
 	letter-spacing: 0;
 	line-height: 1.8;
+	text-align: justify;
+}
+
+.main-text.text-visible {
+	position: relative;
+	right: 0;
+	padding-right: 8vw;
+	padding-bottom: 5vh;
 }
 /*
 .oferta a {
@@ -606,13 +620,7 @@ img.hover-shadow {
 /* ***** MEDIA QUERIES ***** */
 
 @media only screen and (max-width: 340px) {
-
-    .textOne h2 {
-        padding-top: 28vh;
-    }
-    .textOne h3 {
-        padding-top: 1.5rem;
-    }
+	
     .oferta .button {
         margin-left: 3rem;
         margin-right: 3rem;
@@ -639,23 +647,9 @@ img.hover-shadow {
 
 
 @media only screen and (orientation: portrait) and (max-width: 340px) {
-	.textOne h2 {
-		padding-top: 17vh;
+	.animatedLeft.text-visible {
+		padding-top: 25vh;
 	}
-	.textOne p {
-		padding-bottom: 15vh;
-	}
-	.textOne .fa-facebook-official {
-		padding-bottom: 12vh;
-	}
-    .oferta {
-        height: 100%;
-        padding-top: 0;
-        padding-bottom: 5px;
-    }
-    .oferta p {
-        padding-top: 1rem;
-    }
 	.demoMusic {
 		background-size: contain;
 		background-position: top;
@@ -680,23 +674,13 @@ img.hover-shadow {
 }
 
 
-@media only screen and (min-width: 341px) and (max-width: 440px) {
-    
-    .oferta {
-        padding-top: 2px;
-    }
-}
+@media only screen and (min-width: 341px) and (max-width: 440px) {}
 
 
 @media only screen and (orientation: portrait) and (min-width: 341px) and (max-width: 440px) {
-    .oferta {
-        height: 100%;
-        padding-top: 2vh;
-        padding-bottom: 5px;
-    }
-    .textOne h2 {
-        padding-top: 15vh;
-    }
+	.animatedLeft.text-visible {
+		padding-top: 25vh;
+	}
     .gallery {
         height: 80%;
     }
@@ -726,7 +710,9 @@ img.hover-shadow {
 
 
 @media only screen and (min-width: 440px) {
-    
+	.animatedLeft.text-visible {
+		padding-top: 47vh;
+	}
     .gallery {
         background-attachment: initial;
         background-size: contain;
@@ -743,26 +729,9 @@ img.hover-shadow {
 
 
 @media only screen and (orientation: portrait) and (min-width: 440px) {
-    .gallery {
-        padding-top: 20vh;
-    }
-	.demoMusic {
-		background-size: contain;
-		background-position: top;
-		background-color: #0a0c13;
+	.animatedLeft.text-visible {
+		padding-top: 20vh;
 	}
-    #playList {
-        padding-top: 30vh;
-		padding-bottom: 10vh;
-    }
-    .video iframe {
-        height: calc(100vw / 2);
-        width: 100%;
-    }
-    .oferta,
-    .oNas {
-        background-size: cover;
-    }
     .opinie h2 {
         padding-top: .5rem;
     }
@@ -798,6 +767,22 @@ img.hover-shadow {
     nav ul li {
         display: block;
     }
+	.gallery {
+        padding-top: 20vh;
+    }
+	.demoMusic {
+		background-size: contain;
+		background-position: top;
+		background-color: #0a0c13;
+	}
+    #playList {
+        padding-top: 30vh;
+		padding-bottom: 10vh;
+    }
+    .video iframe {
+        height: calc(100vw / 2);
+        width: 100%;
+    }
 }
 
 
@@ -815,9 +800,6 @@ img.hover-shadow {
     .oferta,
     .oNas {
         background-size: cover;
-    }
-    .textOne h2 {
-        padding-top: 5vh;
     }
     .gallery {
         height: 100%;
@@ -847,6 +829,9 @@ img.hover-shadow {
 
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
+	.animatedLeft.text-visible {
+		padding-top: 23vh;
+	}
     .gallery {
         height: 100%;
         padding-top: 23vh;
@@ -865,12 +850,25 @@ img.hover-shadow {
 }
 
 @media only screen and (min-width: 1024px) {
-    .oNas {
-        background-size: cover;
-    }
-    .oferta {
-        padding-top: 3vh;
-    }
+	.textOne {
+		height: 100vh;
+	}
+	.animatedLeft.text-visible {
+		display: inline-block;
+		width: 65vw;
+		padding: 38vh 3vw 0 10vw;
+	}
+	.textOne h2 {
+		padding-bottom: 2vh;
+	}
+	.animatedRight.text-visible {
+		display: inline-block;
+		top: -15vh;
+		left: 0;
+		padding-left: 2vw;
+		height: 15vh;
+		width: 34vw;
+	}
     .gallery {
         background-size: initial;
         padding-top: 40vh;
@@ -889,6 +887,12 @@ img.hover-shadow {
 
 
 @media only screen and (min-width: 1280px) {
+	.animatedLeft.text-visable {
+		padding-top: 60vh;
+	}
+	.animateRight.text-visible {
+		top: -9vh;
+	}
     .gallery {
     }
     .gallery 
@@ -905,6 +909,13 @@ img.hover-shadow {
 
 
 @media only screen and (min-width: 1600px) {
+	.animatedLeft.text-visible {
+		padding-top: 70vh;
+		width: 50vw;
+	}
+	.animatedRight.text-visible {
+		top: -8vh;
+	}
     .gallery {
     }
     .video ul {
