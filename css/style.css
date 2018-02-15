@@ -431,8 +431,9 @@ img.hover-shadow {
 
 /* ***** MUZYKA ***** */
 
-#playList {
-    background-image: url(img/bg/bgaudiowideo2-1024x455.png);
+
+.demoMusic {
+	background-image: url(img/bg/bgaudiowideo2-1024x455.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
 	background-position: center;
@@ -444,24 +445,21 @@ img.hover-shadow {
 	position: relative;
 }
 
-#playList ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
-    padding: 1rem;
-    padding-top: 50vh;
+#playList {
+	display: block;
+    padding: 70vh 20vw 20vh 20vw;
 	list-style-type: none;
 }
-
 .soundcloud {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 5px;
 }
 
 #playList p {
     color: aliceblue;
+	padding-top: 5vh;
+	padding-bottom: 2vh;
 }
 
 
@@ -607,6 +605,14 @@ img.hover-shadow {
     .carusel {
         height: 60vh;
     }
+	.demoMusic {
+		background-size: contain;
+		background-position: top;
+		background-color: #0a0c13;
+	}
+    #playList {
+        padding-top: 24vh;
+    }
 }
 
 
@@ -628,8 +634,14 @@ img.hover-shadow {
     .oferta p {
         padding-top: 1rem;
     }
-    .playList ul {
-        padding-top: 24vh;
+	.demoMusic {
+		background-size: contain;
+		background-position: top;
+		background-color: #0a0c13;
+	}
+    #playList {
+        padding-top: 20vh;
+		padding-bottom: 10vh;
     }
     .video iframe {
         width: 100vw;
@@ -666,8 +678,14 @@ img.hover-shadow {
     .gallery {
         height: 80%;
     }
-    .playList ul {
-        padding-top: 24vh;
+	.demoMusic {
+		background-size: contain;
+		background-position: top;
+		background-color: #0a0c13;
+	}
+    #playList {
+        padding-top: 31vh;
+		padding-bottom: 10vh;
     }
     .video iframe {
         width: 100vw;
@@ -706,8 +724,14 @@ img.hover-shadow {
     .gallery {
         padding-top: 20vh;
     }
-    .playList ul {
-        padding-top: 24vh;
+	.demoMusic {
+		background-size: contain;
+		background-position: top;
+		background-color: #0a0c13;
+	}
+    #playList {
+        padding-top: 30vh;
+		padding-bottom: 10vh;
     }
     .video iframe {
         height: calc(100vw / 2);
@@ -810,12 +834,12 @@ img.hover-shadow {
         height: 50vh;
         margin-top: 10vh
     }
-    .playList ul {
-        padding-top: 20vh;
-    }
     .opinie h2 {
         padding-top: 10vh;
     }
+	#playList {
+		padding-top: 30vh;
+	}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -860,13 +884,6 @@ img.hover-shadow {
 
 @media only screen and (min-width: 1600px) {
     .gallery {
-    }
-    .playList ul {
-        grid-gap: 2rem;
-        padding-top: 40vh;
-    }
-    .playList li {
-        padding: .5rem;
     }
     .video ul {
         grid-template-columns:  repeat(auto-fit, minmax(570px, 1fr));
