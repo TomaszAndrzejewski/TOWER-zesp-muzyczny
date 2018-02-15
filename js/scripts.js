@@ -82,23 +82,11 @@ var bg = document.querySelector(".textOne");
     
     function showTextContainer() {
       var textContainer = document.querySelector(".animatedLeft");
-      textContainer.classList.add("text-visibleL");
+      var textContainer2 = document.querySelector(".animatedRight");
+      textContainer.classList.add("text-visible");
+      textContainer2.classList.add("text-visible");
       bg.removeEventListener("mouseenter", showTextContainer);
     }
-
-
-
-var bg = document.querySelector(".textOne");
-    
-    bg.addEventListener("mouseenter", showTextContainer);
-    
-    function showTextContainer() {
-      var textContainer = document.querySelector(".animatedRight");
-      textContainer.classList.add("text-visibleR");
-      bg.removeEventListener("mouseenter", showTextContainer);
-    }
-
-
 
 
 
