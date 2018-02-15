@@ -73,15 +73,30 @@ function scrollFunction() {
         document.getElementById("navbar").style.top = "-80px";
     }
 }
-			  
+
+/*ANIMACJA O NAS*/
+
+var bg = document.querySelector(".textOne");
+    
+    bg.addEventListener("mouseenter", showTextContainer);
+    
+    function showTextContainer() {
+      var textContainer = document.querySelector(".animatedLeft");
+      textContainer.classList.add("text-visibleL");
+      bg.removeEventListener("mouseenter", showTextContainer);
+    }
 
 
 
-
-
-
-
-
+var bg = document.querySelector(".textOne");
+    
+    bg.addEventListener("mouseenter", showTextContainer);
+    
+    function showTextContainer() {
+      var textContainer = document.querySelector(".animatedRight");
+      textContainer.classList.add("text-visibleR");
+      bg.removeEventListener("mouseenter", showTextContainer);
+    }
 
 
 
