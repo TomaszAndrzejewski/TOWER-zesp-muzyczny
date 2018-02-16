@@ -22,40 +22,14 @@
 
 	<header>
 
-		<!--BG VIDEO-->
 
-		<div class="bts">
-
-			<!--PRZYCISKI-->
-
-			<button onclick="playVid()" class="button">
-						<i class="fa fa-play" aria-hidden="true"></i>
-					</button>
-			<button onclick="pauseVid()" class="button">
-						<i class="fa fa-pause" aria-hidden="true"></i>
-					</button>
-
-			<button onclick="enableMute()" class="button">
-						<i class="fa fa-volume-off" aria-hidden="true"></i>
-					</button>
-			<button onclick="disableMute()" class="button">
-						<i class="fa fa-volume-up" aria-hidden="true"></i>
-					</button>
-
-		</div>
-
-		<!--video-->
-
-		<video loop id="myVideo">
-					  <source src="css/img/bg/You%20Spin%20Me%20Round%20(Like%20a%20Record)%20-%20COVER%20_%20TOWER%20%5B720p%5D.mp4" type="video/mp4">
-					</video>
-		<!--NAWIGACJA-->
+		<!--PASEK NAWIGACJI-->
 
 		<div id="navbar">
 
 			<!--LOGO-->
 
-			<a class="litLogo" href="index.html"><img src="css/img/logo/towerw.png" alt="„Tower” - Zespół muzyczny na wesele"></a>
+			<a class="litLogo" href="#navbar"><img src="css/img/logo/towerw.png" alt="„Tower” - Zespół muzyczny na wesele"></a>
 
 			<!--HAMBURGER-->
 
@@ -67,23 +41,60 @@
 		<nav id="nav">
 
 			<ul>
-				<li><a href="index.html"><span1>GŁÓWNA</span1></a></li>
-				<li><a href="oNas/index.html"><span2>O NAS</span2></a></li>
-				<li><a href="oferta/index.html"><span3>OFERTA</span3></a></li>
-				<li><a href="zdjecia/index.html"><span4>ZDJĘCIA</span4></a></li>
-				<li><a href="audio/index.html"><span5>AUDIO</span5></a></li>
-				<li><a href="video/index.html"><span6>WIDEO</span6></a></li>
-				<li><a href="opinie/index.html"><span7>OPINIE</span7></a></li>
-				<li><a href="kontakt/index.html"><span8>KONTAKT</span8></a></li>
+				<li><a href="#navbar"><span1>GŁÓWNA</span1></a></li>
+				<li><a href="#about"><span2>O NAS</span2></a></li>
+				<li><a href="#oferta"><span3>OFERTA</span3></a></li>
+				<li><a href="#gallery"><span4>ZDJĘCIA</span4></a></li>
+				<li><a href="#playList"><span5>AUDIO</span5></a></li>
+				<li><a href="#video"><span6>WIDEO</span6></a></li>
+				<li><a href="#opinie"><span7>OPINIE</span7></a></li>
+				<li><a href="#kontakt"><span8>KONTAKT</span8></a></li>
 			</ul>
 		</nav>
+
+		<!--TŁO WIDEO-->
+
+		<!--PRZYCISKI-->
+
+		<div class="bts">
+
+			<button onclick="playVid()" class="button">
+				<i class="fa fa-play" aria-hidden="true"></i>
+			</button>
+
+			<button onclick="pauseVid()" class="button">
+				<i class="fa fa-pause" aria-hidden="true"></i>
+			</button>
+
+			<button onclick="enableMute()" class="button">
+				<i class="fa fa-volume-off" aria-hidden="true"></i>
+			</button>
+
+			<button onclick="disableMute()" class="button">
+				<i class="fa fa-volume-up" aria-hidden="true"></i>
+			</button>
+		</div>
+
+		<!--WIDEO-->
+
+		<video loop id="myVideo">
+			<source src="css/img/bg/You%20Spin%20Me%20Round%20(Like%20a%20Record)%20-%20COVER%20_%20TOWER%20%5B720p%5D.mp4" type="video/mp4">
+		</video>
 
 
 		<!-- WIEŻA-->
 
-		<h1><img src="css/img/logo/logo-b.png"></h1>
+		<h1><img src="css/img/logo/logo-b.png" alt="Duże logo zaspołu"></h1>
 
 	</header>
+	
+	
+	<!-- PRZYCISK - DO GÓRY -->
+	
+	<aside>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i>
+</button>
+	</aside>
 
 
 	<!--O NAS-->
@@ -91,12 +102,8 @@
 
 	<article>
 
+		<div id="about">
 
-
-
-		<div class="textOne">
-		
-		
 			<div class="animatedLeft">
 
 				<h2>O nas</h2>
@@ -126,8 +133,8 @@
 
 	<main>
 
-		<div class="oferta">
-			
+		<div id="oferta">
+
 			<div class="main-text">
 
 				<p>Jesteśmy dumni ze sposobności zapewnienia Wam najbardziej profesjonalnej i rozrywkowej usługi na rynku. Pomożemy Ci uczynić „Twój Wielki Dzień” tak specjalnym i niezapomnianym, jak to tylko możliwe - wszyscy Goście długo będą wpominali o Waszym Zespole Weselnym. Nasz repertuar jest zaplanowany w taki sposób, by ściągnąć jak największą ilość Gości na parkiet. Wykonujemy utwory z różnych gatunków muzycznych, dzięki czemu każdy znajdzie coś dla siebie. Jesteśmy w pełni zaopatrzeni. Posiadamy własne nagłośnienie, światła i urządzenie do generowania sztucznego dymu. Jednak jeśli wynajęta przez Ciebie sala jest już wyposażona w sprzęt muzyczny, nie stanowi to żadnego problemu, gdyż możemy się łatwo dostosować. Niezależnie od tego, czy potrzebujesz byśmy poprowadzili Oczepiny, skomponowali unikalną Playlistę, pomogli przy Waszym Pierwszym Tańcu, czy nawet złożyli podziękowania dla Waszych Rodziców, Dziadków, Stryjów, Ciotek, Wujenek czy innego kuzynostwa - nasza firma oferuje te wszystkie dodatki, które zapewnią Ci płynny i bezstresowy przebieg zabawy oraz niepowtarzalne chwile. Zdajemy sobie sprawę, że prawdopodobnie jest to pierwsze wesele jakie organizujesz, podczas gdy my zagraliśmy ich setki, więc swobodnie możesz nas pytac o jakiekolwiek kwestie lub poprosić o radę. Pamiętaj - nie ma głupich pytań! Mozesz napisać do nas na
@@ -136,7 +143,7 @@
 					<!--<a href="tel:513408100">-->zadzwonić
 					<!--</a>-->do Pawła.</p>
 			</div>
-			
+
 
 
 			<!--PRZYCISKI-->
@@ -158,7 +165,7 @@
 
 	<section>
 
-		<div class="gallery">
+		<div id="gallery">
 
 			<h2>GALERIA</h2>
 
@@ -334,91 +341,87 @@
 	</section>
 
 
-
-	<!--AUDIO-->
-
-	<section>
-
-		<div class="demoMusic">
-			<ul id="playList">
-				<li>
-					<p>"You Spin Me Round"</p>
-					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/394743375&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-				</li>
-				<li>
-					<p>"You Keep Me Hangin'On"</p>
-					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/394742931&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-				</li>
-				<li>
-					<p>"Uptown Funk"</p>
-					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393914937&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-				</li>
-				<li>
-					<p>"Are You Gonna Girl?"</p>
-					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393914340&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-				</li>
-				<li>
-					<p>"Take Me Down"</p>
-					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393913068&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-				</li>
-				<li>
-					<p>"Are You Mine?"</p>
-					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393912402&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-				</li>
-				<li>
-					<p>"I Need A Hero"</p>
-					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393904374&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-				</li>
-				<li>
-					<p>"Sharp Dressed Man"</p>
-					<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393902721&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-
-	<!--WIDEO-->
+	<!-- MEDIA -->
 
 
 	<section>
 
-		<div class="video">
+		<div class="mediaBg">
 
-			<ul>
+			<!--AUDIO-->
 
-				<li>
-					<div class="yt">
-						<iframe width="854" height="480" src="https://www.youtube.com/embed/gTGsuhKCIag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</div>
-				</li>
-				<li>
-					<div class="yt">
-						<iframe width="854" height="480" src="https://www.youtube.com/embed/WyKO2SfHVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</div>
-				</li>
-				<li>
-					<div class="yt">
-						<iframe width="854" height="480" src="https://www.youtube.com/embed/S_L7Vo1cQmk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</div>
-				</li>
-				<li>
-					<div class="yt">
-						<iframe width="854" height="480" src="https://www.youtube.com/embed/U2O7jQKeKb0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</div>
-				</li>
-				<li>
-					<div class="yt">
-						<iframe width="854" height="480" src="https://www.youtube.com/embed/y4zvsFDYi9w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</div>
-				</li>
+			<section>
 
-				<li>
-					<div class="yt">
-						<iframe width="854" height="480" src="https://www.youtube.com/embed/YctIiIW52UE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</div>
-				</li>
-			</ul>
+				<div class="demoMusic">
+					<ul id="playList">
+						<li>
+							<p>"You Spin Me Round"</p>
+							<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/394743375&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+						</li>
+						<li>
+							<p>"You Keep Me Hangin'On"</p>
+							<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/394742931&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+						</li>
+						<li>
+							<p>"Uptown Funk"</p>
+							<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393914937&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+						</li>
+						<li>
+							<p>"Are You Gonna Girl?"</p>
+							<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393914340&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+						</li>
+						<li>
+							<p>"Take Me Down"</p>
+							<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393913068&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+						</li>
+						<li>
+							<p>"Are You Mine?"</p>
+							<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393912402&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+						</li>
+						<li>
+							<p>"I Need A Hero"</p>
+							<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393904374&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+						</li>
+						<li>
+							<p>"Sharp Dressed Man"</p>
+							<iframe class="soundcloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/393902721&amp;color=%23c300ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+
+			<!--WIDEO-->
+
+
+			<section>
+
+				<div id="video">
+
+					<ul>
+						<li class="yt1">
+							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/gTGsuhKCIag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</li>
+						<li class="yt2">
+							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/WyKO2SfHVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</li>
+						<li class="yt3">
+							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/S_L7Vo1cQmk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</li>
+						<li class="yt4">
+							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/U2O7jQKeKb0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</li>
+						<li class="yt5">
+							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/y4zvsFDYi9w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</li>
+
+						<li class="yt6">
+							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/YctIiIW52UE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+						</li>
+					</ul>
+				</div>
+			</section>
 		</div>
 	</section>
 
@@ -428,41 +431,62 @@
 
 	<article>
 
-		<div class="opinie">
+		<div id="opinie">
 
-			<h2>A oto niektóre opinie o nas.</h2>
+			<main>
 
-			<h3>PAULINA I WIKTOR 15.11.2016</h3>
+				<h2>A oto niektóre opinie o nas.</h2>
 
-			<p>Jesteśmy super zadowoleni z zespołu. Zagrali u nas świetnie, a wszyscy goście bawili się aż do końca imprezy. Zespół Tower znaleźliśmy poprzez ofertę na stronie internetowej. Zależało nam na zespole, który nie będzie grać disco polo. Kontakt z zespołem był bardzo dobry – spotkaliśmy się raz, by się poznać i omówić nasze oczekiwania. Potem już mailowo i telefonicznie dograliśmy cały plan działań. Grają bardzo żywiołowo i rozkręcają imprezę swoim pozytywnym nastawieniem, krótkimi zabawami i dobrym humorem. Dają z siebie naprawdę wszystko. Ciężko nam było zejść z parkietu, bo grane przez nich hitowe kawałki nie pozwalały na siedzenie. Zespół bardzo profesjonalnie podszedł do całej imprezy i z przyjemnością możemy ich polecać wszystkim lubiącym poskakać przy super energetycznej muzyce w świetnym wykonaniu. Naprawdę można mieć świetne wesele bez disco polo.</p>
-			<p>Dziękujemy!</p>
+				<div class="opText">
 
-			<h3>EMILIA I PIOTR 24.06.2016</h3>
+					<div class="opT1">
 
-			<p>Zespół Tower grał na naszym weselu. Zdaliśmy się na nich i ich najlepsze kawałki, bez disco polo. Rozruszali całą salę od najmłodszych do najstarszych. Robili krótkie przerwy na jedzenie, a zaraz grali kolejne kawałki, że nie było siedzenia za stołem. Grali od początku imprezy do samego końca. Mają olbrzymi repertuar, który dogodzi każdemu. Mieliśmy bardzo dobry kontakt z Pawłem, omówiliśmy wszelkie szczegóły i propozycje zabaw. Wszystko zostało wypełnione zgodnie z ustaleniami. Mając porównanie to Zespół TOWER jest najlepszy i najbardziej profesjonalny.</p>
-			<p>Polecamy gorąco!</p>
+						<i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+						<p>Jesteśmy super zadowoleni z zespołu. Zagrali u nas świetnie, a wszyscy goście bawili się aż do końca imprezy. Zespół Tower znaleźliśmy poprzez ofertę na stronie internetowej. Zależało nam na zespole, który nie będzie grać disco polo. Kontakt z zespołem był bardzo dobry – spotkaliśmy się raz, by się poznać i omówić nasze oczekiwania. Potem już mailowo i telefonicznie dograliśmy cały plan działań. Grają bardzo żywiołowo i rozkręcają imprezę swoim pozytywnym nastawieniem, krótkimi zabawami i dobrym humorem. Dają z siebie naprawdę wszystko. Ciężko nam było zejść z parkietu, bo grane przez nich hitowe kawałki nie pozwalały na siedzenie. Zespół bardzo profesjonalnie podszedł do całej imprezy i z przyjemnością możemy ich polecać wszystkim lubiącym poskakać przy super energetycznej muzyce w świetnym wykonaniu. Naprawdę można mieć świetne wesele bez disco polo. Dziękujemy!</p>
 
-			<h3>IWONA I JAREK 16.04.2016</h3>
 
-			<p>Zespół TOWER znaleźliśmy w internecie i wybraliśmy, aby zagrał na naszym weselu na podstawie opinii innych i demo zamieszczonego na stronie int. zespołu. To była naprawdę bardzo dobra decyzja. Zespół grał świetnie (wykonanie piosenek na bardzo wysokim poziomie), b. mało przerw (i to b. krótkich), bardzo kontaktowi i mili członkowie zespołu, super było też to, że zespół ustalał z nami pewne rzeczy podczas wesela, a nie narzucał sam. I przede wszystkim zespół TOWER umiał świetnie rozpoznać preferencje muzyczne gości i pokierować zabawą tak, aby każdy mógł znaleźć coś dla siebie. Jeśli mielibyśmy ponownie organizować wesele, to z całym przekonaniem wybralibyśmy zespół TOWER. Członkowie zespołu zaskoczyli nas swoim profesjonalnym, niesztampowym podejściem i wyczuciem sytuacji. Dodamy jeszcze, że podczas wesela sporo osób zadawało nam pytania – co to za zespół i jak go znaleźliśmy – goście również byli zachwyceni.</p>
-			<p> Dziękujemy Wam bardzo!</p>
+						<h3>PAULINA I WIKTOR</h3>
+						<p>15.11.2016</p>
+					</div>
 
-			<h2>Pozostałe komentarze znajdziecie tutaj: </h2>
+					<div class="opT2">
 
-			<ul>
+						<i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+						<p>Zespół Tower grał na naszym weselu. Zdaliśmy się na nich i ich najlepsze kawałki, bez disco polo. Rozruszali całą salę od najmłodszych do najstarszych. Robili krótkie przerwy na jedzenie, a zaraz grali kolejne kawałki, że nie było siedzenia za stołem. Grali od początku imprezy do samego końca. Mają olbrzymi repertuar, który dogodzi każdemu. Mieliśmy bardzo dobry kontakt z Pawłem, omówiliśmy wszelkie szczegóły i propozycje zabaw. Wszystko zostało wypełnione zgodnie z ustaleniami. Mając porównanie to Zespół TOWER jest najlepszy i najbardziej profesjonalny. Polecamy gorąco!</p>
 
-				<li>
-					<a href="http://tower.zespoly-weselne.pl/" target="_blank">zespoly-weselne.pl</a>
-				</li>
+						<h3>EMILIA I PIOTR</h3>
+						<p>24.06.2016</p>
+					</div>
 
-				<li>
-					<a href="https://www.weselezklasa.pl/ogloszenia-weselne/zespol-muzyczny-tower,28499/" target="_blank">www.weselezklasa.pl</a>
-				</li>
+					<div class="opT3">
 
-			</ul>
+						<i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
+						<p>Zespół TOWER znaleźliśmy w internecie i wybraliśmy, aby zagrał na naszym weselu na podstawie opinii innych i demo zamieszczonego na stronie int. zespołu. To była naprawdę bardzo dobra decyzja. Zespół grał świetnie (wykonanie piosenek na bardzo wysokim poziomie), b. mało przerw (i to b. krótkich), bardzo kontaktowi i mili członkowie zespołu, super było też to, że zespół ustalał z nami pewne rzeczy podczas wesela, a nie narzucał sam. I przede wszystkim zespół TOWER umiał świetnie rozpoznać preferencje muzyczne gości i pokierować zabawą tak, aby każdy mógł znaleźć coś dla siebie. Jeśli mielibyśmy ponownie organizować wesele, to z całym przekonaniem wybralibyśmy zespół TOWER. Członkowie zespołu zaskoczyli nas swoim profesjonalnym, niesztampowym podejściem i wyczuciem sytuacji. Dodamy jeszcze, że podczas wesela sporo osób zadawało nam pytania – co to za zespół i jak go znaleźliśmy – goście również byli zachwyceni. Dziękujemy Wam bardzo!</p>
 
+						<h3>IWONA I JAREK</h3>
+						<p>16.04.2016</p>
+					</div>
+				</div>
+			</main>
+
+			<footer>
+
+				<div class="opFooter">
+
+					<h2>Pozostałe komentarze znajdziecie tutaj: </h2>
+
+					<ul>
+
+						<li>
+							<a href="http://tower.zespoly-weselne.pl/" target="_blank">zespoly-weselne.pl</a>
+						</li>
+						<li>
+							<a href="https://www.weselezklasa.pl/ogloszenia-weselne/zespol-muzyczny-tower,28499/" target="_blank">www.weselezklasa.pl</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
 		</div>
-
 	</article>
 
 
@@ -471,7 +495,7 @@
 
 	<footer>
 
-		<div class="kontakt">
+		<div id="kontakt">
 
 			<h2>Skontaktuj się z nami!</h2>
 			<a href="mailto:towermusic@op.pl"><i class="fa fa-envelope-o" aria-hidden="true">
@@ -482,7 +506,7 @@
 
 			<a href="https://www.facebook.com/towermusicband/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true">facebook.com/towermusicband/</i></a>
 
-			<p>&#9400;2018 TOWER & <a href="mailto:tomasz.andrzejewski.ux@wp.pl">TOM-AND</a></p>
+			<p>&#9400;2018 TOWER &#38; <a href="mailto:tomasz.andrzejewski.ux@wp.pl">TOM &#38;</a></p>
 
 		</div>
 
