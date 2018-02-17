@@ -95,7 +95,7 @@ function scrollFunction1() {
 
 
 
-/*ANIMACJA O NAS*/
+/*ANIMACJA O NAS, OFERTA I WIDEO*/
 
 
 /**
@@ -122,45 +122,18 @@ $(document).ready(function(){
 	});
 
 
-/* ANIMACJA OFERTA */
+/* PŁYNNE PRZEWIJANIE */
 
-/*
-var bg2 = document.querySelector("#oferta");
-
-bg2.addEventListener("mouseenter", showTextContainer3);
-
-function showTextContainer3() {
-	var textContainer3 = document.querySelector(".main-text");
-	var textContainer4 = document.querySelector(".buttonR");
-	var textContainer5 = document.querySelector(".buttonO");
-	textContainer3.classList.add("text-visible");
-	textContainer4.classList.add("text-visible");
-	textContainer5.classList.add("text-visible");
-	bg2.removeEventListener("mouseenter", showTextContainer3);
-}
-
-*/
-/* ANIMACJA VIDEO */
-/*
-
-var bg3 = document.querySelector("#video");
-
-bg3.addEventListener("mouseenter", showTextContainer4);
-
-function showTextContainer4() {
-	var videoContainer1 = document.querySelector(".yt1");
-	var videoContainer2 = document.querySelector(".yt2");
-	var videoContainer3 = document.querySelector(".yt3");
-	var videoContainer4 = document.querySelector(".yt4");
-	var videoContainer5 = document.querySelector(".yt5");
-	var videoContainer6 = document.querySelector(".yt6");
-
-	videoContainer1.classList.add("video-visible");
-	videoContainer2.classList.add("video-visible");
-	videoContainer3.classList.add("video-visible");
-	videoContainer4.classList.add("video-visible");
-	videoContainer5.classList.add("video-visible");
-	videoContainer6.classList.add("video-visible");
-
-	bg3.removeEventListener("mouseenter", showTextContainer4);
-}*/
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault(); 
+                            
+        var $target = $(this.hash);
+        if($target.length > 0) 
+        {
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top - 100
+            }, 900, 'swing');
+        }    
+    });
+});
