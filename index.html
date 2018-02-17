@@ -9,6 +9,9 @@
 	<meta name="description" content="Zespół Tower">
 	<meta name="keywords" content="Tower, zespół muzyczny, wesele, oczepiny, impreza, zabawa, Białystok, Podlasie">
 	<meta name="author" content="Tomasz Andrzejewski">
+	
+	<link rel="stylesheet" href="animate.css" type="text/css">
+	
 
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -20,7 +23,7 @@
 
 	<!--HEADER-->
 
-	<header>
+	<header id="home">
 
 
 		<!--PASEK NAWIGACJI-->
@@ -41,14 +44,14 @@
 		<nav id="nav">
 
 			<ul>
-				<li><a href="#navbar"><span1>GŁÓWNA</span1></a></li>
-				<li><a href="#about"><span2>O NAS</span2></a></li>
-				<li><a href="#oferta"><span3>OFERTA</span3></a></li>
-				<li><a href="#gallery"><span4>ZDJĘCIA</span4></a></li>
-				<li><a href="#playList"><span5>AUDIO</span5></a></li>
-				<li><a href="#video"><span6>WIDEO</span6></a></li>
-				<li><a href="#opinie"><span7>OPINIE</span7></a></li>
-				<li><a href="#kontakt"><span8>KONTAKT</span8></a></li>
+				<li><a href="#home">TOP</a></li>
+				<li><a href="#about">O NAS</a></li>
+				<li><a href="#oferta">OFERTA</a></li>
+				<li><a href="#gallery">ZDJĘCIA</a></li>
+				<li><a href="#playList">AUDIO</a></li>
+				<li><a href="#video">WIDEO</a></li>
+				<li><a href="#opinie">OPINIE</a></li>
+				<li><a href="#kontakt">KONTAKT</a></li>
 			</ul>
 		</nav>
 
@@ -104,7 +107,7 @@
 
 		<div id="about">
 
-			<div class="animatedLeft">
+			<div class="animatedLeft" data-animate="slideInLeft">
 
 				<h2>O nas</h2>
 
@@ -112,7 +115,7 @@
 
 			</div>
 
-			<div class="animatedRight">
+			<div class="animatedRight" data-animate="slideInRight">
 
 				<!--ZOSTAWIĘ LINKI JAKBY CO-->
 
@@ -135,7 +138,7 @@
 
 		<div id="oferta">
 
-			<div class="main-text">
+			<div class="mainText" data-animate="slideInLeft">
 
 				<p>Jesteśmy dumni ze sposobności zapewnienia Wam najbardziej profesjonalnej i rozrywkowej usługi na rynku. Pomożemy Ci uczynić „Twój Wielki Dzień” tak specjalnym i niezapomnianym, jak to tylko możliwe - wszyscy Goście długo będą wpominali o Waszym Zespole Weselnym. Nasz repertuar jest zaplanowany w taki sposób, by ściągnąć jak największą ilość Gości na parkiet. Wykonujemy utwory z różnych gatunków muzycznych, dzięki czemu każdy znajdzie coś dla siebie. Jesteśmy w pełni zaopatrzeni. Posiadamy własne nagłośnienie, światła i urządzenie do generowania sztucznego dymu. Jednak jeśli wynajęta przez Ciebie sala jest już wyposażona w sprzęt muzyczny, nie stanowi to żadnego problemu, gdyż możemy się łatwo dostosować. Niezależnie od tego, czy potrzebujesz byśmy poprowadzili Oczepiny, skomponowali unikalną Playlistę, pomogli przy Waszym Pierwszym Tańcu, czy nawet złożyli podziękowania dla Waszych Rodziców, Dziadków, Stryjów, Ciotek, Wujenek czy innego kuzynostwa - nasza firma oferuje te wszystkie dodatki, które zapewnią Ci płynny i bezstresowy przebieg zabawy oraz niepowtarzalne chwile. Zdajemy sobie sprawę, że prawdopodobnie jest to pierwsze wesele jakie organizujesz, podczas gdy my zagraliśmy ich setki, więc swobodnie możesz nas pytac o jakiekolwiek kwestie lub poprosić o radę. Pamiętaj - nie ma głupich pytań! Mozesz napisać do nas na
 					<!--<a href="mailto:towermusic@op.pl">-->maila
@@ -151,9 +154,9 @@
 
 			<div class="buttons">
 
-				<a href="https://drive.google.com/file/d/0B10iNzO18MDwZi02bnJIc09VWW8/view" class="button buttonR" target="_blank">REPERTUAR</a>
+				<a href="https://drive.google.com/file/d/0B10iNzO18MDwZi02bnJIc09VWW8/view" class="button buttonR" target="_blank" data-animate="slideInLeft">REPERTUAR</a>
 
-				<a href="https://drive.google.com/file/d/0B10iNzO18MDwbWhReEZqYzRLY2c/view" class="button buttonO" target="_blank">OCZEPINY</a>
+				<a href="https://drive.google.com/file/d/0B10iNzO18MDwbWhReEZqYzRLY2c/view" class="button buttonO" target="_blank" data-animate="slideInRight">OCZEPINY</a>
 			</div>
 		</div>
 	</main>
@@ -399,23 +402,23 @@
 				<div id="video">
 
 					<ul>
-						<li class="yt1">
+						<li data-animate="slideInRight">
 							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/gTGsuhKCIag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</li>
-						<li class="yt2">
+						<li data-animate="slideInLeft">
 							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/WyKO2SfHVnc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</li>
-						<li class="yt3">
+						<li data-animate="slideInRight">
 							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/S_L7Vo1cQmk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</li>
-						<li class="yt4">
+						<li data-animate="slideInLeft">
 							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/U2O7jQKeKb0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</li>
-						<li class="yt5">
+						<li data-animate="slideInRight">
 							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/y4zvsFDYi9w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</li>
 
-						<li class="yt6">
+						<li data-animate="slideInLeft">
 							<iframe class="yt" width="854" height="480" src="https://www.youtube.com/embed/YctIiIW52UE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 						</li>
@@ -472,7 +475,7 @@
 			<footer>
 
 				<div class="opFooter">
-
+					
 					<h2>Pozostałe komentarze znajdziecie tutaj: </h2>
 
 					<ul>
@@ -506,7 +509,7 @@
 
 			<a href="https://www.facebook.com/towermusicband/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true">facebook.com/towermusicband/</i></a>
 
-			<p>&#9400;2018 TOWER &#38; <a href="mailto:tomasz.andrzejewski.ux@wp.pl">TOM &#38;</a></p>
+			<p>&#9400;2018 TOWER  &#38;<a href="mailto:tomasz.andrzejewski.ux@wp.pl">"TOM &#38;"</a></p>
 
 		</div>
 
@@ -514,6 +517,7 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="jquery.viewportchecker.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 

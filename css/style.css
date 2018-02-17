@@ -18,12 +18,42 @@ body {
 	height: 100%;
 }
 
+/* ANIMACJE OGÓLNIE */
+
+.hide {
+     opacity:0;
+}
+.show {
+     opacity:1;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
 /* ***** HEADER ***** */
 
 header {
     display: grid;
     grid-template-columns: 192px auto;
     grid-template-rows: 71px 45px calc(100vh - 116px);
+    background-image: url(img/photos/Zdjęcie-front-1-Edit2-1024x576.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 460px;
     max-height: 100vh;
@@ -183,36 +213,22 @@ h1 {
     height: 100%;
     background-repeat: no-repeat;
     background-position: left top;
-    background-attachment:scroll;
+    background-attachment: scroll;
     background-size: contain;
     text-decoration: none;
 	position: relative;
 }
 
-.animatedLeft {
-	position: relative;
-	left: -100%;
-	-webkit-transition: 2s;
-	transition: 2s;
-	height: auto;
+.animatedLeft{
+	padding: 5vh 8vw 5vh 8vw;
+	width: 100%;
 }
+
 .animatedRight {
 	position: relative;
-	right: -100%;
-	-webkit-transition: 2s;
-	transition: 2s;
-	height: auto;
-}
-.animatedLeft.text-visible {
-	position: relative;
-	left: 0;
-	padding: 55vh 8vw 5vh 8vw;
-}
-.animatedRight.text-visible {
-	position: relative;
-	right: 0;
 	padding: 5vh 8vw;
 }
+
 .textOne h2 {
     font-size: 1.5rem;
 }
@@ -255,28 +271,14 @@ h1 {
 	position: relative;
 }
 
-.main-text {
-	position: relative;
-	right: -150%;
-	-webkit-transition: 2s;
-	transition: 2s;
+.mainText {
 	height: auto;
     font-size: 1rem;
 	letter-spacing: 0;
 	line-height: 1.8;
 	text-align: justify;
+	padding-bottom: 3vh;
 }
-
-.main-text.text-visible {
-	position: relative;
-	right: 0;
-	padding-bottom: 5vh;
-}
-/*
-#oferta a {
-    text-decoration: none;
-    color: #d936a1;
-}*/
 
 /* PRZYCISKI */
 
@@ -300,6 +302,7 @@ h1 {
 	-webkit-transition: all .1s linear;
 	transition: all .1s linear;
 	margin: 4vh;
+	padding: 1rem;
 }
 
 #oferta .button:hover {
@@ -314,19 +317,7 @@ h1 {
 	background: -webkit-gradient(linear, left top, right top, from(#6d3824), to(#283195));
 	background: linear-gradient(to right, #6d3824, #283195);
     padding: 1rem 3rem 1rem 3rem;
-	margin-right: 1rem;
-	right: -100%;
-	top: -100%;
-	-webkit-transition: 2s;
-	transition: 2s;
-	position: relative;		
-}
-
-.buttonR.text-visible {
-	position: relative;
-	right: 0;
-	top: 0;
-	padding: 1rem;
+	margin-right: 1rem;	
 }
 
 .buttonO {
@@ -335,18 +326,6 @@ h1 {
 	background: linear-gradient(to left, #6d3824, #283195);
     padding: 1rem 3rem 1rem 3rem;
 	margin-left: 1rem;
-	left: -100%;
-	top: -100%;
-	-webkit-transition: 2s;
-	transition: 2s;
-	position: relative;
-}
-
-.buttonO.text-visible {
-	position: relative;
-	left: 0;
-	top: 0;
-	padding: 1rem;
 }
 
 
@@ -558,12 +537,11 @@ img.hover-shadow {
 #video {
     width: 100%;
     height: 100%;
-	padding: 5vh
-	background: rgba(0, 0, 0, 0);;
+	padding: 5vh 0;
+	background: rgba(0, 0, 0, 0);
 }
 
 #video ul {
-	display: block;
     list-style: none;
     width: 100%;
 	text-align: center;
@@ -585,78 +563,6 @@ img.hover-shadow {
 
 .ytp-share-button, .ytp-watch-later-button, .ytp-puse-overlay, .ytp-scroll-min {
 	display: none;
-}
-
-.yt1 {
-	position: relative;
-	right: -100%;
-	-webkit-transition: 2s;
-	transition: 2s;
-}
-
-.yt3 {
-	position: relative;
-	right: -100%;
-	-webkit-transition: 2s;
-	transition: 2s;
-}
-
-.yt5 {
-	position: relative;
-	right: -100%;
-	-webkit-transition: 2s;
-	transition: 2s;
-}
-
-.yt2 {
-	position: relative;
-	left: -100%;
-	-webkit-transition: 2s;
-	transition: 2s;
-}
-
-.yt4 {
-	position: relative;
-	left: -100%;
-	-webkit-transition: 2s;
-	transition: 2s;
-}
-
-.yt6 {
-	position: relative;
-	left: -100%;
-	-webkit-transition: 2s;
-	transition: 2s;
-}
-
-.yt1.video-visible {
-	position: relative;
-	right: 0;
-}
-
-.yt2.video-visible {
-	position: relative;
-	left: 0;
-}
-
-.yt3.video-visible {
-	position: relative;
-	right: 0;
-}
-
-.yt4.video-visible {
-	position: relative;
-	left: 0;
-}
-
-.yt5.video-visible {
-	position: relative;
-	right: 0;
-}
-
-.yt6.video-visible {
-	position: relative;
-	left: 0;
 }
 
 
@@ -791,13 +697,19 @@ op.Footer h2 {
 
 
 @media only screen and (orientation: portrait) and (max-width: 340px) {
+	header {
+		background-position: center;
+	}
 	.litLogo {
 		display: none;
 	}
-	.animatedLeft.text-visible {
+	.animatedLeft {
 		padding-top: 25vh;
 	}
-	.main-text.text-visible {
+	#oferta {
+		padding-bottom: 5vh;
+	}
+	.mainText {
 		padding: 0.5vw;
 	}
 	#oferta .button {
@@ -824,7 +736,7 @@ op.Footer h2 {
 	.litLogo {
 		display: none;
 	}
-	.animatedLeft.text-visible {
+	.animatedLeft {
 		padding-top: 25vh;
 	}
 	#oferta {
@@ -845,11 +757,17 @@ op.Footer h2 {
         padding-top: 20vh;
 		padding-bottom: 10vh;
     }
+    .yt {
+    	width: 90%;
+    }
 }
 
 
 @media only screen and (min-width: 440px) {
-	.animatedLeft.text-visible {
+	.litLogo {
+		display: none;
+	}
+	.animatedLeft {
 		padding-top: 47vh;
 	}
 	#oferta {
@@ -871,8 +789,11 @@ op.Footer h2 {
 
 
 @media only screen and (orientation: portrait) and (min-width: 440px) {
-	.animatedLeft.text-visible {
+	.animatedLeft {
 		padding-top: 20vh;
+	}
+	#oferta {
+		padding-bottom: 5vh;
 	}
 	#playList {
 		padding-top: 25vh;
@@ -918,6 +839,10 @@ op.Footer h2 {
 
 
 @media only screen and (min-width: 768px) {
+	header {
+		background-size: cover;
+		background-position: center;
+	}
     .hamburger {
         display: none;
     }
@@ -925,7 +850,10 @@ op.Footer h2 {
 		display: none;
 	}
 	#about {
-		background-position-x: -50vw;
+		background-position: center;
+	}
+	.animatedLeft {
+		padding-top: 107vh;
 	}
     #oferta,
     #about {
@@ -949,12 +877,16 @@ op.Footer h2 {
 
 
 @media only screen and (orientation: portrait) and (min-width: 768px) {
-	#about {
-		background-position-x: -60vw;
-		background-attachment: fixed;
+	header {
+		background-position: top;
+		background-size: cover;
 	}
-	.animatedLeft.text-visible {
-		padding-top: 23vh;
+	#about {
+		background-position: top;
+		background-size: inherit;
+	}
+	.animatedLeft {
+		padding-top: 30vh;
 	}
 	#oferta {
 		padding-bottom: 5vh;
@@ -981,14 +913,14 @@ op.Footer h2 {
 @media only screen and (min-width: 1024px) {
 	#about {
 		height: 100vh;
-		background-position-x: -40vw;
+		background-position: center;
 	}
-	.animatedLeft.text-visible {
+	.animatedLeft {
 		display: inline-block;
 		width: 65vw;
 		padding: 60vh 3vw 0 10vw;
 	}
-	.animatedRight.text-visible {
+	.animatedRight {
 		display: inline-block;
 		top: -7vh;
 		left: 0;
@@ -997,6 +929,7 @@ op.Footer h2 {
 	}
 	#oferta {
 		background-position-x: -12vw;
+		padding-bottom: 5vh;
 	}
     #gallery {
         background-size: initial;
@@ -1023,12 +956,12 @@ op.Footer h2 {
 
 @media only screen and (min-width: 1280px) {
 	#about {
-		background-position-x: -15vw;
+		background-position: center;
 	}
-	.animatedLeft.text-visable {
+	.animatedLeft {
 		padding-top: 60vh;
 	}
-	.animateRight.text-visible {
+	.animateRight {
 		top: -9vh;
 	}
 	#oferta {
@@ -1042,14 +975,69 @@ op.Footer h2 {
 	#about {
 		background-position-x: 0;
 	}
-	.animatedLeft.text-visible {
+	.animatedLeft {
 		padding-top: 70vh;
 		width: 50vw;
 	}
-	.animatedRight.text-visible {
+	.animatedRight {
 		top: -8vh;
 	}
 	#oferta {
 		background-position-x: -7vw;
 	}
+}
+
+
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
