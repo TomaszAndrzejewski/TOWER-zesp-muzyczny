@@ -1,3 +1,70 @@
+/* PŁYNNE PRZEWIJANIE */
+/*
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault(); 
+                            
+        var $target = $(this.hash);
+        if($target.length > 0) 
+        {
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top - 100
+            }, 900, 'swing');
+        }    
+    });
+});
+*/
+
+
+
+
+
+/*NAVBAR i PRZYCISK DO GÓRY*/
+
+window.onscroll = function () {
+	scrollFunction()
+	scrollFunction1()
+};
+
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		document.getElementById("navbar").style.top = "0";
+	} else {
+		document.getElementById("navbar").style.top = "-80px";
+	}
+}
+function scrollFunction1() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+	function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+
+/* ZMIANA TŁA HEADER */
+
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#video, #hide").hide();
+        $("#picture, #show").show();
+        
+    });
+    $("#show").click(function(){
+        $("#video, #hide").show();
+        $("#picture, #show").hide();
+        
+    });
+});
+
+
+
 /*PRZYCISKI PLAY/PAUSE*/
 var vid = document.getElementById("myVideo");
 
@@ -7,17 +74,6 @@ function playVid() {
 
 function pauseVid() {
 	vid.pause();
-}
-
-/*PRZYCISKI MUTE*/
-
-
-function enableMute() {
-	vid.muted = true;
-}
-
-function disableMute() {
-	vid.muted = false;
 }
 
 
@@ -67,33 +123,6 @@ function showSlides(n) {
 }
 
 
-/*NAVBAR i PRZYCISK DO GÓRY*/
-
-window.onscroll = function () {
-	scrollFunction()
-	scrollFunction1()
-};
-
-function scrollFunction() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		document.getElementById("navbar").style.top = "0";
-	} else {
-		document.getElementById("navbar").style.top = "-80px";
-	}
-}
-function scrollFunction1() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-	function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-
 
 /*ANIMACJA O NAS, OFERTA I WIDEO*/
 
@@ -120,20 +149,3 @@ $(document).ready(function(){
     });
  
 	});
-
-
-/* PŁYNNE PRZEWIJANIE */
-
-$(document).ready(function(){
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault(); 
-                            
-        var $target = $(this.hash);
-        if($target.length > 0) 
-        {
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top - 100
-            }, 900, 'swing');
-        }    
-    });
-});

@@ -9,9 +9,9 @@
 	<meta name="description" content="Zespół Tower">
 	<meta name="keywords" content="Tower, zespół muzyczny, wesele, oczepiny, impreza, zabawa, Białystok, Podlasie">
 	<meta name="author" content="Tomasz Andrzejewski">
-	
+
 	<link rel="stylesheet" href="animate.css" type="text/css">
-	
+
 
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -23,7 +23,7 @@
 
 	<!--HEADER-->
 
-	<header id="home">
+	<header>
 
 
 		<!--PASEK NAWIGACJI-->
@@ -44,59 +44,49 @@
 		<nav id="nav">
 
 			<ul>
-				<li><a href="#home">TOP</a></li>
 				<li><a href="#about">O NAS</a></li>
 				<li><a href="#oferta">OFERTA</a></li>
 				<li><a href="#gallery">ZDJĘCIA</a></li>
 				<li><a href="#playList">AUDIO</a></li>
-				<li><a href="#video">WIDEO</a></li>
+				<li><a href="#videoYt">WIDEO</a></li>
 				<li><a href="#opinie">OPINIE</a></li>
 				<li><a href="#kontakt">KONTAKT</a></li>
 			</ul>
 		</nav>
 
-		<!--TŁO WIDEO-->
+		<!-- PRZYCISKI ZMAIANY TŁA -->
 
-		<!--PRZYCISKI-->
+		<button id="hide" onclick="pauseVid()"><i class="fa fa-stop-circle fa-3x" aria-hidden="true"></i></button>
+		<button id="show" onclick="playVid()"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i>
+		</button>
 
-		<div class="bts">
+		<!-- TŁO ZDJĘCIE -->
 
-			<button onclick="playVid()" class="button">
-				<i class="fa fa-play" aria-hidden="true"></i>
-			</button>
-
-			<button onclick="pauseVid()" class="button">
-				<i class="fa fa-pause" aria-hidden="true"></i>
-			</button>
-
-			<button onclick="enableMute()" class="button">
-				<i class="fa fa-volume-off" aria-hidden="true"></i>
-			</button>
-
-			<button onclick="disableMute()" class="button">
-				<i class="fa fa-volume-up" aria-hidden="true"></i>
-			</button>
+		<div id="picture">
+			<img src="css/img/photos/Zdj%C4%99cie-front-1-Edit2-1024x576.jpg" alt="zespół">
 		</div>
+		
+		<!-- TŁO WIDEO -->
 
-		<!--WIDEO-->
+		<div id="video" style="display: none;">
 
-		<video loop id="myVideo">
-			<source src="css/img/bg/You%20Spin%20Me%20Round%20(Like%20a%20Record)%20-%20COVER%20_%20TOWER%20%5B720p%5D.mp4" type="video/mp4">
-		</video>
-
+			<video loop id="myVideo">
+				<source src="css/img/bg/You%20Spin%20Me%20Round%20(Like%20a%20Record)%20-%20COVER%20_%20TOWER%20%5B720p%5D.mp4" type="video/mp4">
+			</video>
+		</div>
 
 		<!-- WIEŻA-->
 
 		<h1><img src="css/img/logo/logo-b.png" alt="Duże logo zaspołu"></h1>
 
 	</header>
-	
-	
+
+
 	<!-- PRZYCISK - DO GÓRY -->
-	
+
 	<aside>
 		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i>
-</button>
+		</button>
 	</aside>
 
 
@@ -399,7 +389,7 @@
 
 			<section>
 
-				<div id="video">
+				<div id="videoYt">
 
 					<ul>
 						<li data-animate="slideInRight">
@@ -475,7 +465,7 @@
 			<footer>
 
 				<div class="opFooter">
-					
+
 					<h2>Pozostałe komentarze znajdziecie tutaj: </h2>
 
 					<ul>
@@ -509,13 +499,13 @@
 
 			<a href="https://www.facebook.com/towermusicband/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true">facebook.com/towermusicband/</i></a>
 
-			<p>&#9400;2018 TOWER  &#38;<a href="mailto:tomasz.andrzejewski.ux@wp.pl">"TOM &#38;"</a></p>
+			<p>&#9400;2018 TOWER &#38;<a href="mailto:tomasz.andrzejewski.ux@wp.pl">"TOM &#38;"</a></p>
 
 		</div>
 
 	</footer>
 
-
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="jquery.viewportchecker.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
