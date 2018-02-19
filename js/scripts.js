@@ -65,7 +65,22 @@ $(document).ready(function(){
 
 
 
-/*PRZYCISKI PLAY/PAUSE*/
+$(document).ready(function(){
+    $(".menuBt").click(function(){
+        $("#nav").hide();
+        $(".hamburger").show();
+        
+    });
+    $(".hamburger").click(function(){
+        $("#nav").show();
+        $("hamburger").hide();
+        
+    });
+});
+
+
+
+/* PRZYCISKI PLAY/PAUSE */
 var vid = document.getElementById("myVideo");
 
 function playVid() {
@@ -78,7 +93,7 @@ function pauseVid() {
 
 
 
-/*LIGHTBOX*/
+/* LIGHTBOX */
 
 
 function openModal() {
