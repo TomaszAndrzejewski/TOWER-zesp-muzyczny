@@ -1,7 +1,7 @@
 /* PŁYNNE PRZEWIJANIE */
-/*
+
 $(document).ready(function(){
-    $('a[href^="#"]').on('click',function (e) {
+    $('.menuBt').on('click',function (e) {
         e.preventDefault(); 
                             
         var $target = $(this.hash);
@@ -13,7 +13,7 @@ $(document).ready(function(){
         }    
     });
 });
-*/
+
 
 
 
