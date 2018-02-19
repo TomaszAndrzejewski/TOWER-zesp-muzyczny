@@ -64,16 +64,17 @@ $(document).ready(function(){
 });
 
 
+/* WYMIANA HAMBURGER - NAWIGACJA */
 
 $(document).ready(function(){
-    $(".menuBt").click(function(){
-        $("#nav").hide();
-        $(".hamburger").show();
-        
-    });
     $(".hamburger").click(function(){
         $("#nav").show();
         $("hamburger").hide();
+        
+    });
+    $(".menuBt").click(function(){
+        $("#nav").hide();
+        $(".hamburger").show();
         
     });
 });
