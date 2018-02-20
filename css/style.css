@@ -574,11 +574,6 @@ img.hover-shadow {
 	height: auto;
 }
 
-.ytp-share-button, .ytp-watch-later-button, .ytp-puse-overlay, .ytp-scroll-min {
-	display: none;
-}
-
-
 /* ***** OPINIE ***** */
 
 #opinie {
@@ -857,6 +852,9 @@ op.Footer h2 {
         border-bottom-left-radius: 10%;
         border-bottom-right-radius: 10%;
         background-color: rgba(60, 35, 142, 0.87);
+		margin-left: auto;
+		margin-right: auto;
+		width: inherit;
     }
     nav ul li {
         display: block;
@@ -873,9 +871,15 @@ op.Footer h2 {
 
 
 @media only screen and (min-width: 768px) {
+	#nav {
+		display: inline-block;
+	}
 	header {
 		background-size: cover;
 		background-position: center;
+	}
+	#navbar {
+		display: none;
 	}
     .hamburger {
         display: none;
