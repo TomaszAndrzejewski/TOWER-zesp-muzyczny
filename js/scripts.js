@@ -64,24 +64,6 @@ $(document).ready(function () {
 	});
 });
 
-
-/* WYMIANA HAMBURGER - NAWIGACJA */
-
-$(document).ready(function(){
-    $(".hamburger").click(function(){
-        $("#nav").show();
-        $("hamburger").hide();
-        
-    });
-    $(".menuBt").click(function(){
-        $("#nav").hide();
-        $(".hamburger").show();
-        
-    });
-});
-
-
-
 /* PRZYCISKI PLAY/PAUSE */
 var vid = document.getElementById("myVideo");
 
@@ -114,10 +96,12 @@ function zmianaMenu(mql) {
 
 		});
 	} else {
-		$("#nav").show();
-	}
+		$(".menuBt").click(function () {
+			$("#nav").show();
+			$("hamburger").hide();
+	});
 };
-
+};
 
 
 /* LIGHTBOX */

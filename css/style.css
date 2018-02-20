@@ -869,9 +869,6 @@ op.Footer h2 {
 	#nav {
 		display: inline-block;
 	}
-	#navbar {
-		display: none;
-	}
 	nav {
 		display: -webkit-box;
 		display: -ms-flexbox;
