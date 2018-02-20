@@ -866,10 +866,9 @@ op.Footer h2 {
 
 
 @media only screen and (min-width: 768px) {
-<<<<<<< HEAD
 	#nav {
 		display: inline-block;
-=======
+	}
 	#navbar {
 		display: none;
 	}
@@ -877,7 +876,6 @@ op.Footer h2 {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
->>>>>>> 81c8f2faac0a3eaca6186d871112528abeb15bf8
 	}
 	header {
 		background-size: cover;
