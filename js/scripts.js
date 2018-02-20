@@ -65,8 +65,24 @@ $(document).ready(function () {
 });
 
 
+/* WYMIANA HAMBURGER - NAWIGACJA */
 
-/*PRZYCISKI PLAY/PAUSE*/
+$(document).ready(function(){
+    $(".hamburger").click(function(){
+        $("#nav").show();
+        $("hamburger").hide();
+        
+    });
+    $(".menuBt").click(function(){
+        $("#nav").hide();
+        $(".hamburger").show();
+        
+    });
+});
+
+
+
+/* PRZYCISKI PLAY/PAUSE */
 var vid = document.getElementById("myVideo");
 
 function playVid() {
@@ -104,7 +120,7 @@ function zmianaMenu(mql) {
 
 
 
-/*LIGHTBOX*/
+/* LIGHTBOX */
 
 
 function openModal() {

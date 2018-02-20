@@ -495,12 +495,12 @@ img {
 
 img.hover-shadow {
 	-webkit-transition: 0.3s;
-	transition: 0.3s
+	transition: 0.3s;
 }
 
 .hover-shadow:hover {
 	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -831,22 +831,17 @@ op.Footer h2 {
 
 
 @media only screen and (max-width: 767px) {
-    #nav {
-        transition: -webkit-transform .3s ease-in-out;
-        -webkit-transition: -webkit-transform .3s ease-in-out;
-        transition: transform .3s ease-in-out;
-        transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-        position: fixed;
+	#nav {
+		position: fixed;
         text-align: center;
         width: 75vw;
+		top: 0;
         left: 50%;
-        top: -350px;
-        z-index: 2;
-    }
-    #nav:target {
-        -webkit-transform: translate(-50%, 300px);
-        transform: translate(-50%, 350px);
-    }
+		-webkit-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+		z-index: 2;
+		display: none;
+	}
     nav ul {
         font-size: 1.2em;
         border-bottom-left-radius: 10%;
@@ -871,8 +866,18 @@ op.Footer h2 {
 
 
 @media only screen and (min-width: 768px) {
+<<<<<<< HEAD
 	#nav {
 		display: inline-block;
+=======
+	#navbar {
+		display: none;
+	}
+	nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+>>>>>>> 81c8f2faac0a3eaca6186d871112528abeb15bf8
 	}
 	header {
 		background-size: cover;
