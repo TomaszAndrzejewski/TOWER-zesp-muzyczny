@@ -176,7 +176,7 @@ h1 {
 	-ms-flex-item-align: end;
 	align-self: end;
 	justify-self: center;
-	position: absolute;
+	position: relative;
 	margin: 0;
 }
 
