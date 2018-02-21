@@ -22,18 +22,9 @@ $(document).ready(function () {
 
 window.onscroll = function () {
 	scrollFunction()
-	scrollFunction1()
 };
 
 function scrollFunction() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		document.getElementById("navbar").style.top = "0";
-	} else {
-		document.getElementById("navbar").style.top = "-80px";
-	}
-}
-
-function scrollFunction1() {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		document.getElementById("myBtn").style.display = "block";
 	} else {
@@ -88,12 +79,10 @@ function zmianaMenu(mql) {
 		$(".hamburger").click(function () {
 			$("#nav").show();
 			$("hamburger").hide();
-
 		});
 		$(".menuBt").click(function () {
 			$("#nav").hide();
 			$(".hamburger").show();
-
 		});
 	} else {
 		$(".menuBt").click(function () {
